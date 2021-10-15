@@ -1,9 +1,9 @@
-PWD /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4
+PWD /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.tex
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.log
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.tex
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -41,10 +41,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.aux
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.aux
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.aux
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -60,9 +60,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.pdf
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/romeo/Desktop/Programming/Latex/Prob and Stats/Justin HW 4/hw4.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Justin Stats/HW 4/Justin HW 4/h4q3.aux
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1634258128 "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.tex" "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.pdf" "hw3" 1634258295
-  "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux" 1634258129 32 c81c40425fbb5e93b90fba65da0b5e61 ""
-  "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.tex" 1634258295 2475 7f3c571f061238f729c972ab4b6127ee ""
+["pdflatex"] 1634258817 "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.tex" "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.pdf" "hw3q3" 1634258819
+  "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux" 1634258819 32 c81c40425fbb5e93b90fba65da0b5e61 ""
+  "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.tex" 1634258769 2475 7f3c571f061238f729c972ab4b6127ee ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -140,11 +140,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632432670 2724736 6a1aeec5b22172b001749bc38fa9ed3c ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "hw3.aux" 1634258129 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "hw3.tex" 1634258295 2475 7f3c571f061238f729c972ab4b6127ee ""
+  "hw3q3.aux" 1634258819 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "hw3q3.tex" 1634258769 2475 7f3c571f061238f729c972ab4b6127ee ""
   (generated)
-  "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.log"
-  "hw3.aux"
-  "hw3.pdf"
-  "hw3.log"
-  "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.pdf"
+  "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.log"
+  "hw3q3.aux"
+  "hw3q3.pdf"
+  "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.pdf"
+  "hw3q3.log"

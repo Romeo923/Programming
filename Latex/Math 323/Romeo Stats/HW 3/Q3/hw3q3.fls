@@ -1,9 +1,9 @@
-PWD /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3
+PWD /Users/romeo/Desktop/Programming/Latex/Math 323/Q3
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.tex
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.log
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.tex
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -470,10 +470,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -497,9 +497,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.pdf
+OUTPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux
+INPUT /Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb

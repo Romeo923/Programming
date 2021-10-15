@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  14 OCT 2021 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  14 OCT 2021 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.tex"
-(/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.tex
+**"/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.tex"
+(/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -352,8 +352,8 @@ LaTeX Info: Redefining \] on input line 2924.
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box61
-) (/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux)
-\openout1 = `hw3.aux'.
+) (/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux)
+\openout1 = `hw3q3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -451,17 +451,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[4] (/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.aux) ) 
+[4] (/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.aux) ) 
 Here is how much of TeX's memory you used:
  22600 strings out of 478994
- 591401 string characters out of 5858184
- 998715 words of memory out of 5000000
+ 591403 string characters out of 5858184
+ 998717 words of memory out of 5000000
  39757 multiletter control sequences out of 15000+600000
  404183 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,6n,117p,819b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/Users/romeo/Desktop/Programming/Latex/Math 323/HW 3/hw3.pdf" (4 pages, 49268 bytes).
+Output written on "/Users/romeo/Desktop/Programming/Latex/Math 323/Q3/hw3q3.pdf" (4 pages, 49268 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
