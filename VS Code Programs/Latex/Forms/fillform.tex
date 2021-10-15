@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+% \usepackage{digsig}
+\usepackage{graphicx}
+\usepackage{background}
+\backgroundsetup{contents=\includegraphics{purple}}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+    \begin{Form}
+        \includegraphics{UBLogo}
+        \begin{center}
+            \huge Add/Drop Form Version 1\\
+            \begin{tabular}{|l r|}
+                \hline
+                \TextField[]{Student ID:} & \TextField[]{Semester/Year:} \\
+                \TextField[]{Last Name:} & \TextField[]{First Name:} \\
+                \TextField[]{Address:} & \TextField[]{City:} \\
+                \TextField[]{State:} & \TextField[]{Zip Code:} \\ 
+                \ChoiceMenu[combo,width=2.5cm]{Time:}{Full-Time,Part-Time} & \ChoiceMenu[combo,width=3.5cm]{Level:}{Undergraduate,Graduate}\\
+                \hline 
+            \end{tabular}
+
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{|p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|} \hline
+                    \multicolumn{4}{|c|}{Add} & \multicolumn{4}{|c|}{Drop}\\ \hline
+                    Item No. & Dept. Course No. & Section & Semester Hrs. & Instruct Sig. & Dept. Course No. & Section & Semester Hrs.\\\hline
+                    \centering 1& \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} &\TextField[width=1.5cm]{} \\ \hline
+                    \centering 2& \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} &\TextField[width=1.5cm]{} \\ \hline
+                    \centering 3& \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} & \TextField[width=1.5cm]{} &\TextField[width=1.5cm]{} \\ \hline    
+                \end{tabular}
+            \end{table}
+
+            
+        \end{center}
+        Reason for change:\\
+        \TextField[]{}\\\\
+        \begin{tabular}{p{5cm} p{5cm}}
+            \TextField[]{Current Total Semester Hours Before This Change: } & \raggedright \TextField[]{New Total Semester Hours After This Change: } \\
+            % \TextField[]{Advisor Signature:}
+        \end{tabular}
+        % \Submit[export=PDF]{Submit}
+    \end{Form}
+\end{document}
