@@ -1,0 +1,11 @@
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\bin\Debug\ImageProcessingRomeo.exe.config
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\bin\Debug\ImageProcessingRomeo.exe
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\bin\Debug\ImageProcessingRomeo.pdb
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.csprojAssemblyReference.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.Form1.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.Properties.Resources.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.exe
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.pdb
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcessing\ImageProcessingRomeo\obj\Debug\ImageProcessingRomeo.FormImage.resources

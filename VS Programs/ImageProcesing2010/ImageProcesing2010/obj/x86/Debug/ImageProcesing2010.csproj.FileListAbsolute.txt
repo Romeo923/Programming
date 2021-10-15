@@ -1,0 +1,61 @@
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Form1.resources
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Properties.Resources.resources
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.exe
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.pdb
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.exe
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.pdb
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormRotateDialog.resources
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormBrightness.resources
+D:\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormContrast.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.exe
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.pdb
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.exe
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.pdb
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Form1.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormBrightness.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormContrast.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Properties.Resources.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.GenerateResource.Cache
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormRotate.resources
+D:\PICO2\Pico2_D\csharp2010\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormShift.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.exe
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.pdb
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.exe
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.pdb
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csprojResolveAssemblyReference.cache
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Form1.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormBrightness.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormContrast.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormRotate.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormShift.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Properties.Resources.resources
+D:\csharp2k08\ImageProcessingGeneral\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.GenerateResource.Cache
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.exe
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.pdb
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csprojAssemblyReference.cache
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Form1.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormBrightness.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormContrast.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormRotate.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormShift.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Properties.Resources.resources
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.exe
+C:\Users\Romeo\Desktop\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.pdb
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.exe
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\bin\Debug\ImageProcesing2010.pdb
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csprojAssemblyReference.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Form1.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormBrightness.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormContrast.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormRotate.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.FormShift.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.Properties.Resources.resources
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.exe
+C:\Users\Romeo\Desktop\Programming\VS Programs\ImageProcesing2010\ImageProcesing2010\obj\x86\Debug\ImageProcesing2010.pdb
