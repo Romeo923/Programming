@@ -35,15 +35,12 @@ void SharedData::Eat(int who, int* state, int new_state)
 	bool got_rice = false;
 	//////////////////////////////////////////////////////////
 	//TODO
-
-	wait(pMutex);
-	signal_mutex(pMutex);
+	
 	requestToSit(who);
-	UnSit(who);
+	wait(pMutex);
 	getLeftChopstic(who);
-	putLeftChopstic(who);
+	signal_mutex(pMutex);
 	getRightChopstic(who);
-	putRightChopstic(who);
 
 	got_rice = MoreRice();
 	if(got_rice) {
@@ -54,6 +51,10 @@ void SharedData::Eat(int who, int* state, int new_state)
 	if (got_rice) {
 		ConsumeRice(state, new_state);
 	}
+	
+	putLeftChopstic(who);
+	putRightChopstic(who);
+	UnSit(who);
     
 }
 
