@@ -11,7 +11,7 @@ k=24594
 c=200
 x0=0.01
 v0=0.1
-t= [i*0.01 for i in range(600)]
+t= (i*0.01 for i in range(600))
 omegan = np.sqrt(k/m)
 ccr= 2*np.sqrt(m*k)
 zeta= c/ccr
@@ -29,4 +29,4 @@ x = [np.exp(-zeta*omegan*i)* ((A1*np.sin(omegad*i)) + (A2*np.cos(omegad*i))) + X
 plt.plot(x)
 plt.show()
 
-T,X0 = ode(dampedForce(t,x,m,c,k,Fo,omegaf))
+# T,X0 = ode(dampedForce(t,x,m,c,k,Fo,omegaf))
