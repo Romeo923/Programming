@@ -203,6 +203,11 @@ int loadProgram(int* buffer, int length)
 void decodeAddress(int address_param, OPCODE* opcode, int* page, int* offset)
 {
     //TODO in class
+	Address_Type address;
+	address.iNum = address_param;
+	*opcode = (OPCODE)address.strNum[3];
+	*page = (int)address.strNum[1];
+	*offset = (int)address.strNum[0];
 }
 
 //This function determine if a page is in memory by checking the page_table
