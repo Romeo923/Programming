@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SharedData.cpp">
+    <Files>
+      <File FileName="SharedData.cpp" Line="48" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DinningPhilosopher" expanded="True">
+            <Node name="DinningPhilosopher" expanded="True">
+              <Node name="SharedData.cpp" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x64" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

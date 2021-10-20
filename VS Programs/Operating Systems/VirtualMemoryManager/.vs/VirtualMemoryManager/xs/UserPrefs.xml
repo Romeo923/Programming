@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="VirtualMemoryManager.cpp">
+    <Files>
+      <File FileName="VirtualMemoryManager.cpp" Line="1" Column="1" IsPinned="True" />
+      <File FileName="LinkedList.cpp" Line="1" Column="1" IsPinned="True" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VirtualMemoryManager" expanded="True">
+            <Node name="VirtualMemoryManager" expanded="True">
+              <Node name="VirtualMemoryManager.cpp" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x64" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
