@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  2 NOV 2021 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  2 NOV 2021 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.tex"
-(/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.tex
+**"/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.tex"
+(/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -214,8 +214,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box49
-) (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.aux)
-\openout1 = `HW2.aux'.
+) (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.aux)
+\openout1 = `HW3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -248,9 +248,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
- (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.out) (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.out)
+ (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.out) (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.out)
 \@outlinefile=\write3
-\openout3 = `HW2.out'.
+\openout3 = `HW3.out'.
 
 
 *geometry* driver: auto-detecting
@@ -295,196 +295,109 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 44.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--115
+Underfull \hbox (badness 10000) in paragraph at lines 10--41
 
  []
 
 [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.aux)
-Package rerunfilecheck Info: File `HW2.out' has not changed.
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.aux)
+Package rerunfilecheck Info: File `HW3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8533 strings out of 478994
- 124583 string characters out of 5858184
- 431661 words of memory out of 5000000
- 25938 multiletter control sequences out of 15000+600000
+ 8513 strings out of 478994
+ 124245 string characters out of 5858184
+ 422661 words of memory out of 5000000
+ 25922 multiletter control sequences out of 15000+600000
  405129 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,8n,74p,372b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.pdf" (2 pages, 95175 bytes).
+ 71i,4n,74p,325b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 3/HW3.pdf" (1 page, 74207 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 45 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
