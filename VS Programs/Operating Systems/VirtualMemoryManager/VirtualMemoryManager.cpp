@@ -54,6 +54,8 @@ int swapPage_LRU(int page_to_add)
 	int local_frame_index = 0;
 	//TODO> Add your logic here>
 	//use functions from the queue as suggested by the book
+	local_frame_index = queue->RemoveTail();
+	queue->AddToHead(page_to_add, local_frame_index);
 
 	return local_frame_index;
 }
@@ -83,7 +85,22 @@ OPCODE fetch()
 		//The following functions are available to call:
 		//is_PageLoaded, swapPage_LRU, queue->AddToHead, queue->MoveToHead, 
 		//findEmptyFrame, update_page_table, load_LogicalToPhysical
+		
+		if (!(is_PageLoaded(page, &frame_index))) {
 
+			frame_index = findEmptyFrame();
+
+			if (frame_index == NOT_FOUND) {
+
+				fault_count++;
+				frame_index = swapPage_LRU(page);
+			}
+
+			load_LogicalToPhysical(page, frame_index);
+			queue->AddToHead(page, frame_index);
+			update_page_table(page, frame_index);
+		}
+		
 	}
 
 	return opcode;
