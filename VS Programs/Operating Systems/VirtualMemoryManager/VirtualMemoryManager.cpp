@@ -87,18 +87,22 @@ OPCODE fetch()
 		//findEmptyFrame, update_page_table, load_LogicalToPhysical
 		
 		if (!(is_PageLoaded(page, &frame_index))) {
-
+			fault_count++;
 			frame_index = findEmptyFrame();
 
 			if (frame_index == NOT_FOUND) {
 
-				fault_count++;
+				
 				frame_index = swapPage_LRU(page);
+			}else{
+				queue->AddToHead(page, frame_index);
+
 			}
 
 			load_LogicalToPhysical(page, frame_index);
-			queue->AddToHead(page, frame_index);
 			update_page_table(page, frame_index);
+		}else{
+			queue->MoveToHead(page);
 		}
 		
 	}
