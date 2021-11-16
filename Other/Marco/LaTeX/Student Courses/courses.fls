@@ -635,6 +635,14 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxmcr
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxmcr
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxmcr
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxmcr
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxpyg
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxpyg
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxpyg
+INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxpyg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
@@ -643,11 +651,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.aux
 INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.out
 INPUT /Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.out
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb

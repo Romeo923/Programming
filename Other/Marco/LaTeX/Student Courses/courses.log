@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  16 NOV 2021 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  16 NOV 2021 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -367,43 +367,39 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-No file pythontex-files-courses/courses.pytxmcr.
-Run PythonTeX to create it.
+(/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxmcr)
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 10.
 \c@listing=\count306
 \newfloat@ftype=\count307
 Package newfloat Info: float type `listing'=8 on input line 10.
+ (/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/pythontex-files-courses/courses.pytxpyg)
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 12.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 ){/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 12.
-
-
-Package PythonTeX Warning: Missing autoprint content on input line 28.
-
-[1
+ [1
 
 ] (/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.aux)
 Package rerunfilecheck Info: File `courses.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11903 strings out of 478994
- 194642 string characters out of 5858184
- 534479 words of memory out of 5000000
- 29239 multiletter control sequences out of 15000+600000
- 404403 words of font info for 30 fonts, out of 8000000 for 9000
+ 12097 strings out of 478994
+ 197516 string characters out of 5858184
+ 534852 words of memory out of 5000000
+ 29429 multiletter control sequences out of 15000+600000
+ 404095 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,11n,88p,433b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.pdf" (1 page, 37728 bytes).
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.pdf" (1 page, 29104 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  35 words of extra memory for PDF output out of 10000 (max. 10000000)
 
