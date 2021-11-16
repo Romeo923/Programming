@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1637083421 "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.tex" "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.pdf" "courses" 1637083423
+["pdflatex"] 1637083421 "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.tex" "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.pdf" "courses" 1637083654
   "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.aux" 1637083422 1918 697b96514758b466f9605425bc75d5ae ""
-  "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.tex" 1637083421 2553 388733d41e8e3c783f62402627302194 ""
+  "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.tex" 1637083654 2553 388733d41e8e3c783f62402627302194 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
@@ -59,11 +59,11 @@
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
   "courses.aux" 1637083422 1918 697b96514758b466f9605425bc75d5ae "pdflatex"
   "courses.out" 1637083422 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "courses.tex" 1637083421 2553 388733d41e8e3c783f62402627302194 ""
+  "courses.tex" 1637083654 2553 388733d41e8e3c783f62402627302194 ""
   (generated)
-  "courses.aux"
-  "courses.out"
-  "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.log"
-  "courses.pdf"
   "courses.log"
   "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.pdf"
+  "courses.pdf"
+  "/Users/romeo/Desktop/Programming/Other/Marco/LaTeX/Student Courses/courses.log"
+  "courses.out"
+  "courses.aux"
