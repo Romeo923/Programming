@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+    \begin{Form}
+        \begin{tabular}{l c}
+            Student Name: & \TextField[width=5cm,name=Student Name]{} \\
+            Student ID: & \TextField[width=5cm,name=Student ID]{} \\
+        \end{tabular}
+
+        \begin{table}[h!]
+            \begin{tabular}{|c|c|c|c|c|c|} \hline
+                \multicolumn{3}{|c|}{Fall} & \multicolumn{3}{|c|}{Spring}\\ \hline
+                Course & Credits & Registered & Course & Credits & Registered\\\hline
+                \mbox{\TextField[name=course1f]{}} & \mbox{\TextField[width=1cm,name=credits1f]{}} & \mbox{\CheckBox[name=box1f]{}} & \mbox{\TextField[name=course1s]{}} & \mbox{\TextField[width=1cm,name=credits1s]{}} & \mbox{\CheckBox[name=box1s]{}} \\ \hline
+                \mbox{\TextField[name=course2f]{}} & \mbox{\TextField[width=1cm,name=credits2f]{}} & \mbox{\CheckBox[name=box2f]{}} & \mbox{\TextField[name=course2s]{}} & \mbox{\TextField[width=1cm,name=credits2s]{}} & \mbox{\CheckBox[name=box2s]{}} \\ \hline
+                \mbox{\TextField[name=course3f]{}} & \mbox{\TextField[width=1cm,name=credits3f]{}} & \mbox{\CheckBox[name=box3f]{}} & \mbox{\TextField[name=course3s]{}} & \mbox{\TextField[width=1cm,name=credits3s]{}} & \mbox{\CheckBox[name=box3s]{}} \\ \hline    
+                \mbox{\TextField[name=course4f]{}} & \mbox{\TextField[width=1cm,name=credits4f]{}} & \mbox{\CheckBox[name=box4f]{}} & \mbox{\TextField[name=course4s]{}} & \mbox{\TextField[width=1cm,name=credits4s]{}} & \mbox{\CheckBox[name=box4s]{}} \\ \hline    
+                \mbox{\TextField[name=course5f]{}} & \mbox{\TextField[width=1cm,name=credits5f]{}} & \mbox{\CheckBox[name=box5f]{}} & \mbox{\TextField[name=course5s]{}} & \mbox{\TextField[width=1cm,name=credits5s]{}} & \mbox{\CheckBox[name=box5s]{}} \\ \hline    
+                \mbox{\TextField[name=course6f]{}} & \mbox{\TextField[width=1cm,name=credits6f]{}} & \mbox{\CheckBox[name=box6f]{}} & \mbox{\TextField[name=course6s]{}} & \mbox{\TextField[width=1cm,name=credits6s]{}} & \mbox{\CheckBox[name=box6s]{}} \\ \hline    
+                \mbox{\TextField[name=course7f]{}} & \mbox{\TextField[width=1cm,name=credits7f]{}} & \mbox{\CheckBox[name=box7f]{}} & \mbox{\TextField[name=course7s]{}} & \mbox{\TextField[width=1cm,name=credits7s]{}} & \mbox{\CheckBox[name=box7s]{}} \\ \hline    
+
+            \end{tabular}
+        \end{table}
+    \end{Form}
+\end{document}
