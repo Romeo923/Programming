@@ -1,5 +1,5 @@
 =>PYTHONTEX#py#default#default#0#i#####28#
-2+4**2
+2+3
 =>PYTHONTEX:SETTINGS#
 version=0.17
 outputdir=pythontex-files-courses

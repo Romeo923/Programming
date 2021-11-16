@@ -2,8 +2,8 @@ PWD /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.tex
-OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.log
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.tex
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -421,10 +421,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.aux
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.aux
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.aux
-OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.aux
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -462,18 +462,18 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.pdf
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.pdf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -492,9 +492,9 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.aux
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
-INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/hw4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 4/HW4.out
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
