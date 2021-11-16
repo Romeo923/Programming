@@ -2,6 +2,9 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{python}
+\usepackage{pythonhighlight}
+\usepackage{pythontex}
 \renewcommand{\arraystretch}{1.5}
 
 \begin{document}
@@ -15,14 +18,14 @@
             \begin{tabular}{|c|c|c|c|c|c|} \hline
                 \multicolumn{3}{|c|}{Fall} & \multicolumn{3}{|c|}{Spring}\\ \hline
                 Registered & Course & Credits & Registered & Course & Credits \\\hline
-                \mbox{\CheckBox[name=box1f]{}} & \mbox{\TextField[name=course1f]{}} & \mbox{\TextField[width=1cm,name=credits1f]{}} & \mbox{\CheckBox[name=box1s]{}} & \mbox{\TextField[name=course1s]{}} & \mbox{\TextField[width=1cm,name=credits1s]{}} \\ \hline
+                \mbox{\CheckBox[name=box1f]{}} & \mbox{\TextField[name=course1f]{}} & \mbox{\TextField[width=1cm,name=credits1f,value=2]{}} & \mbox{\CheckBox[name=box1s]{}} & \mbox{\TextField[name=course1s]{}} & \mbox{\TextField[width=1cm,name=credits1s]{}} \\ \hline
                 \mbox{\CheckBox[name=box2f]{}} & \mbox{\TextField[name=course2f]{}} & \mbox{\TextField[width=1cm,name=credits2f]{}} & \mbox{\CheckBox[name=box2s]{}} & \mbox{\TextField[name=course2s]{}} & \mbox{\TextField[width=1cm,name=credits2s]{}} \\ \hline
                 \mbox{\CheckBox[name=box3f]{}} & \mbox{\TextField[name=course3f]{}} & \mbox{\TextField[width=1cm,name=credits3f]{}} & \mbox{\CheckBox[name=box3s]{}} & \mbox{\TextField[name=course3s]{}} & \mbox{\TextField[width=1cm,name=credits3s]{}} \\ \hline    
                 \mbox{\CheckBox[name=box4f]{}} & \mbox{\TextField[name=course4f]{}} & \mbox{\TextField[width=1cm,name=credits4f]{}} & \mbox{\CheckBox[name=box4s]{}} & \mbox{\TextField[name=course4s]{}} & \mbox{\TextField[width=1cm,name=credits4s]{}} \\ \hline    
                 \mbox{\CheckBox[name=box5f]{}} & \mbox{\TextField[name=course5f]{}} & \mbox{\TextField[width=1cm,name=credits5f]{}} & \mbox{\CheckBox[name=box5s]{}} & \mbox{\TextField[name=course5s]{}} & \mbox{\TextField[width=1cm,name=credits5s]{}} \\ \hline    
                 \mbox{\CheckBox[name=box6f]{}} & \mbox{\TextField[name=course6f]{}} & \mbox{\TextField[width=1cm,name=credits6f]{}} & \mbox{\CheckBox[name=box6s]{}} & \mbox{\TextField[name=course6s]{}} & \mbox{\TextField[width=1cm,name=credits6s]{}} \\ \hline    
                 \mbox{\CheckBox[name=box7f]{}} & \mbox{\TextField[name=course7f]{}} & \mbox{\TextField[width=1cm,name=credits7f]{}} & \mbox{\CheckBox[name=box7s]{}} & \mbox{\TextField[name=course7s]{}} & \mbox{\TextField[width=1cm,name=credits7s]{}} \\ \hline  
-                \multicolumn{2}{|c|}{Total Credits: } & 2 & \multicolumn{2}{|c|}{Total Credits: } & 2 \\ \hline
+                \multicolumn{2}{|c|}{Total Credits: } & \TextField[name=totalCreditsf,width=1cm,readonly=true}]{} & \multicolumn{2}{|c|}{Total Credits: } & \py{2+5**2} \\ \hline
             \end{tabular}
         \end{table}
     \end{Form}
