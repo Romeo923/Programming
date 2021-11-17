@@ -1,9 +1,15 @@
 import json
 from Utils.Student import *
 
-file_path = 'Other\\Marco\\Student Courses\\Utils\\student_data.json'
+path = 'Other\\Marco\\Student Courses\\Utils\\student_data.json'
 
-def save(student_list):
+def load(file_path):
+    with open(file_path) as file:
+        students = json.load(file)["Students"]
+    
+    return students
+
+def save(student_list, file_path):
     students = []
     for student in student_list:
         courses = []
@@ -25,8 +31,7 @@ def save(student_list):
     with open(file_path,'w') as file:
         json.dump({"Students":students},file,indent=2)
 
-with open(file_path) as file:
-    students = json.load(file)["Students"]
+students = load(path)
 
 slist = [Student(name=data["name"],id=data["ID"],courses=data["courses"]) for data in students]
 
