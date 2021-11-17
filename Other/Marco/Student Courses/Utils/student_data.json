@@ -1,0 +1,44 @@
+{
+  "Students": [
+    {
+      "name": "Romeo Capozziello",
+      "ID": 1072300,
+      "courses": [
+        {
+          "name": "Real Analysis",
+          "ID": "MATH-500",
+          "semester": "Spring",
+          "credits": 3,
+          "registered": true
+        },
+        {
+          "name": "Nuclear Physics",
+          "ID": "PHYS-900",
+          "semester": "Fall",
+          "credits": 4,
+          "registered": false
+        }
+      ]
+    },
+    {
+      "name": "Santa Clause",
+      "ID": 123456789,
+      "courses": [
+        {
+          "name": "Thermodynamics",
+          "ID": "PHYS-700",
+          "semester": "Spring",
+          "credits": 3,
+          "registered": true
+        },
+        {
+          "name": "Intro to Engineering",
+          "ID": "ENGR-100",
+          "semester": "Spring",
+          "credits": 3,
+          "registered": true
+        }
+      ]
+    }
+  ]
+}
