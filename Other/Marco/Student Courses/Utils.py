@@ -1,4 +1,8 @@
 import json
+from tkinter import *
+from tkmacosx import *
+from tkinter import ttk
+
 
 class Course:
 
@@ -55,7 +59,7 @@ def load(file_path):
     
     return students
 
-def save(student_list, file_path):
+def write(student_list, file_path):
     students = []
     for student in student_list:
         courses = []
@@ -76,3 +80,51 @@ def save(student_list, file_path):
 
     with open(file_path,'w') as file:
         json.dump({"Students":students},file,indent=2)
+               
+def setHome(root,student_list,frame=None):
+    if(frame):
+        frame.destroy()
+    frame = Frame(root)
+    Label(frame,text="Students\n").grid(column=0,row=0)
+    for i, student in enumerate(student_list):
+        Button(frame,text=student.name,command=lambda r=root,s=student,f=frame,sl=student_list: profile(root=r,student=s,frame=f,student_list=sl)).grid(column=0,row=(i+1))
+    frame.pack()
+    
+def profile(root,student,student_list,frame=None):
+    if(frame):
+        frame.destroy()
+    frame = Frame(root)
+    Label(frame,text="Student Name: ").grid(column=0,row=0)
+    name = Entry(frame)
+    name.insert(0,student.name)
+    name.grid(column=1,row=0)
+
+    Label(frame,text="Student ID: ").grid(column=0,row=1)
+    id = Entry(frame)
+    id.insert(0,student.ID)
+    id.grid(column=1,row=1)
+
+    tree = ttk.Treeview(frame)
+    tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
+    tree.column('#0',width=0,stretch=NO)
+    tree.column('Registered',width=120,anchor=CENTER)
+    tree.column('Course Name',width=120,anchor=CENTER)
+    tree.column('Course No.',width=120,anchor=CENTER)
+    tree.column('Credits',width=120,anchor=CENTER)
+    tree.heading('Registered',text="Registered")
+    tree.heading('Course Name',text="Course Name")
+    tree.heading('Course No.',text="Course No.")
+    tree.heading('Credits',text="Credits")
+
+    for i, course in enumerate(student.courses):
+        tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
+    tree.insert(parent='',index='end',iid=999,values=('','','Total Credits:',student.totalCreds()))
+    
+    tree.grid(column=1,row=3)
+
+
+    Button(frame,text="Home",command=lambda r=root,f=frame,s=student_list: setHome(root=r,student_list=s,frame=f)).grid(column=0,row=3)
+    frame.pack()
+
+
+
