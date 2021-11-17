@@ -3,12 +3,8 @@ from tkinter import *
 from tkinter import ttk
 
 path = 'Other\\Marco\\Student Courses\\Utils\\student_data.json'
-root = Tk()
-root.geometry("600x250")
-
 students = load(path)
 slist = [Student(name=data["name"],id=data["ID"],courses=data["courses"]) for data in students]
-
 
 def profile(root,student,frame=None):
     if(frame):
@@ -46,7 +42,6 @@ def profile(root,student,frame=None):
     Button(frame,text="Home",command=lambda r=root,f=frame: setHome(r,slist,f)).grid(column=0,row=3)
     frame.pack()
         
-
 def setHome(root,student_list,frame=None):
     if(frame):
         frame.destroy()
@@ -56,8 +51,12 @@ def setHome(root,student_list,frame=None):
         Button(frame,text=student.name,command=lambda r=root,s=student,f=frame: profile(r,s,f)).grid(column=0,row=(i+1))
     frame.pack()
 
+def main():
+    
+    root = Tk()
+    root.geometry("600x250")
 
-s1 = Student("Marco",10000,[{
+    s1 = Student("Marco",10000,[{
         "name":"Test",
         "ID":"Test-500",
         "semester":"Spring",
@@ -65,8 +64,13 @@ s1 = Student("Marco",10000,[{
         "registered":True        
     }])
 
-setHome(root,slist)
-root.mainloop()
+    setHome(root,slist)
+    root.mainloop()
+
+if __name__ == '__main__':
+    main()
+
+
 
 # slist.append(s1)
 
