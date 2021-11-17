@@ -1,3 +1,5 @@
+import json
+
 class Course:
 
     def __init__(self,name,id,credits,semester,registered):
@@ -44,3 +46,33 @@ class Student:
             student_str += f'{course}\n'
 
         return student_str
+
+
+def load(file_path):
+
+    with open(file_path) as file:
+        students = json.load(file)["Students"]
+    
+    return students
+
+def save(student_list, file_path):
+    students = []
+    for student in student_list:
+        courses = []
+        for course in student.courses:
+            courses.append({
+                "name":course.name,
+                "ID":course.id,
+                "semester":course.semester,
+                "credits":course.credits,
+                "registered":course.registered
+            })
+
+        students.append({
+            "name":student.name,
+            "ID":student.ID,
+            "courses":courses
+        })
+
+    with open(file_path,'w') as file:
+        json.dump({"Students":students},file,indent=2)
