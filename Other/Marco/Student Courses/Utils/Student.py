@@ -16,7 +16,6 @@ class Course:
         Registered:    {self.registered}
         """
 
-
 class Student:
 
     def __init__(self,name,id,courses):
