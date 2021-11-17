@@ -4,7 +4,7 @@ class Course:
 
     def __init__(self,name,id,credits,semester,registered):
         self.name = name
-        self.id = id
+        self.ID = id
         self.credits = credits
         self.semester = semester
         self.registered = registered
@@ -12,7 +12,7 @@ class Course:
     def __str__(self):
         return f"""
         Course Name:   {self.name}
-        Course Number: {self.id}
+        Course Number: {self.ID}
         Credits:       {self.credits}
         Semester:      {self.semester}
         Registered:    {self.registered}
@@ -33,6 +33,9 @@ class Student:
     
     def springCourses(self):
         return (course for course in self.courses if course.semester == 'Spring')
+
+    def totalCreds(self):
+        return sum([course.credits for course in self.courses])
 
     def __str__(self):
         
@@ -62,7 +65,7 @@ def save(student_list, file_path):
         for course in student.courses:
             courses.append({
                 "name":course.name,
-                "ID":course.id,
+                "ID":course.ID,
                 "semester":course.semester,
                 "credits":course.credits,
                 "registered":course.registered
