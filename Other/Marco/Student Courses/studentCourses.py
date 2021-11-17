@@ -1,8 +1,8 @@
-from Utils.Utils import *
+from Utils import *
 from tkinter import *
 from tkinter import ttk
 
-path = 'Other\\Marco\\Student Courses\\Utils\\student_data.json'
+path = 'student_data.json'
 students = load(path)
 slist = [Student(name=data["name"],id=data["ID"],courses=data["courses"]) for data in students]
 
