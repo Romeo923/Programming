@@ -28,11 +28,8 @@ class Student:
     def adddCourse(self,course):
         self.courses.append(course)
 
-    def fallCourses(self):
-        return (course for course in self.courses if course.semester == 'Fall')
-    
-    def springCourses(self):
-        return (course for course in self.courses if course.semester == 'Spring')
+    def getCourses(self,semester,year):
+        return (course for course in self.courses if course.semester == semester)
 
     def totalCreds(self):
         return sum([course.credits for course in self.courses])
