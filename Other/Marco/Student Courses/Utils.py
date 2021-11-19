@@ -14,6 +14,9 @@ class Course:
         self.year = year
         self.registered = registered
 
+    def __eq__(self, course: 'Course') -> bool:
+        return self.name == course.name and self.ID == course.ID and self.credits == course.credits and self.semester == course.semester and self.year == course.year and self.registered == course.registered 
+
     def __str__(self):
         return f"""
         Course Name:   {self.name}
@@ -53,6 +56,13 @@ class Student:
 
         return student_str
 
+class State:
+
+    def __init__(self,file_path,root,frame,student_list):
+        self.file_path = file_path
+        self.root = root
+        self.frame = frame
+        self.student_list = student_list
 
 def load(file_path):
 
@@ -83,31 +93,59 @@ def write(student_list, file_path):
 
     with open(file_path,'w') as file:
         json.dump({"Students":students},file,indent=2)
-               
-def setHome(root,student_list,frame=None):
-    if(frame):
-        frame.destroy()
-    frame = Frame(root)
-    Label(frame,text="Students\n").grid(column=0,row=0)
-    for i, student in enumerate(student_list):
-        Button(frame,text=student.name,command=lambda r=root,s=student,f=frame,sl=student_list: profile(root=r,student=s,frame=f,student_list=sl)).grid(column=0,row=(i+1))
-    frame.pack()
+
+def save(student,state):
+    if student.ID == 0:
+        return
+
+    temp = Course('','',0,'',0,'')
+    d = []
+    for i, course in enumerate(student.courses):
+        if course == temp:
+            d.append(i)
+
     
-def profile(root,student,student_list,frame=None):
-    if(frame):
-        frame.destroy()
-    frame = Frame(root)
-    Label(frame,text="Student Name: ").grid(column=0,row=0)
-    name = Entry(frame)
+    for j, i in enumerate(d):
+        del student.courses[i-j]
+        j += 1
+
+    add = False
+    for i, s in enumerate(state.student_list):
+        if student.ID == s.ID:
+            state.student_list[i] = student
+            add = True
+    if add is False:
+        state.student_list.append(student)
+
+    write(student_list=state.student_list,file_path=state.file_path)
+    profile(student=student,state=state)
+
+def setHome(state):
+    
+    state.frame.destroy()
+    state.frame = Frame(state.root)
+    Label(state.frame,text="Students\n").grid(column=0,row=0)
+    for i, student in enumerate(state.student_list):
+        Button(state.frame,text=student.name,command=lambda s=student,st = state: profile(student=s,state=st)).grid(column=0,row=(i+1))
+    Button(state.frame,text="Add Student",command=lambda st = state: profile(student=Student("",0,courses=[]),state=st)).grid(column=0)
+    state.frame.pack()
+    
+def profile(student,state):
+
+    
+    state.frame.destroy()
+    state.frame = Frame(state.root)
+    Label(state.frame,text="Student Name: ").grid(column=0,row=0)
+    name = Entry(state.frame)
     name.insert(0,student.name)
     name.grid(column=1,row=0)
 
-    Label(frame,text="Student ID: ").grid(column=0,row=1)
-    id = Entry(frame)
+    Label(state.frame,text="Student ID: ").grid(column=0,row=1)
+    id = Entry(state.frame)
     id.insert(0,student.ID)
     id.grid(column=1,row=1)
 
-    tree = ttk.Treeview(frame)
+    tree = ttk.Treeview(state.frame)
     tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
     tree.column('#0',width=0,stretch=NO)
     tree.column('Registered',width=120,anchor=CENTER)
@@ -122,16 +160,23 @@ def profile(root,student,student_list,frame=None):
     for i, course in enumerate(student.courses):
         tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
     tree.insert(parent='',index='end',iid=999,values=('','','Total Credits:',student.totalCreds()))
-    
+   
     tree.grid(column=1,row=3)
 
+    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state)).grid(column=0,row=3)
+    Button(state.frame,text="Save",command=lambda s=student,st = state : save(student=s,state=st)).grid(column=0,row=4)
+    Button(state.frame,text="Home",command=lambda st = state: setHome(state=st)).grid(column=0,row=5)
+    state.frame.pack()
 
-    Button(frame,text="Home",command=lambda r=root,f=frame,s=student_list: setHome(root=r,student_list=s,frame=f)).grid(column=0,row=3)
-    frame.pack()
+def addCourse(student,state):
+        student.courses.append(Course('','',0,'',0,''))
+        profile(student=student,state=state)
 
-def createFrame(student_list):
+def createFrame(student_list,file_path):
     root = Tk()
     root.geometry("600x250")
-    setHome(root,student_list)
+    frame = Frame(root)
+    state = State(file_path=file_path,root=root,student_list=student_list,frame=frame)
+    setHome(state)
     root.mainloop()
 
