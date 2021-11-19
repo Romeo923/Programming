@@ -20,23 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-# slist.append(s1)
-
-# save(slist[:-1],path)
-
-# for s in slist:
-#     print(s)
-#     print('-=-=-=-=-=-=-=-=-=-=-=-=-')
-    # print("Fall\n")
-    # for course in s.fallCourses():
-    #     print(course)
-    #     print("-----------------------")
-
-    # print("Spring\n")       
-    # for course in s.springCourses(): 
-    #     print(course)
-    #     print("-----------------------")
-    # print('-=-=-=-=-=-=-=-=---=-=-=-=-=-=-=-=-')
