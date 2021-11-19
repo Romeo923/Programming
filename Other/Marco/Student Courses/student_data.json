@@ -8,6 +8,7 @@
           "name": "Real Analysis",
           "ID": "MATH-500",
           "semester": "Spring",
+          "year": 1,
           "credits": 3,
           "registered": true
         },
@@ -15,6 +16,7 @@
           "name": "Nuclear Physics",
           "ID": "PHYS-900",
           "semester": "Fall",
+          "year": 3,
           "credits": 4,
           "registered": false
         }
@@ -28,6 +30,7 @@
           "name": "Thermodynamics",
           "ID": "PHYS-700",
           "semester": "Spring",
+          "year": 1,
           "credits": 3,
           "registered": true
         },
@@ -35,6 +38,7 @@
           "name": "Intro to Engineering",
           "ID": "ENGR-100",
           "semester": "Spring",
+          "year": 2,
           "credits": 3,
           "registered": true
         }

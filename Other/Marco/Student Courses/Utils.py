@@ -1,16 +1,17 @@
 import json
 from tkinter import *
-from tkmacosx import *
+# from tkmacosx import *
 from tkinter import ttk
 
 
 class Course:
 
-    def __init__(self,name,id,credits,semester,registered):
+    def __init__(self,name,id,credits,semester,year,registered):
         self.name = name
         self.ID = id
         self.credits = credits
         self.semester = semester
+        self.year = year
         self.registered = registered
 
     def __str__(self):
@@ -19,6 +20,7 @@ class Course:
         Course Number: {self.ID}
         Credits:       {self.credits}
         Semester:      {self.semester}
+        Year:          {self.year}
         Registered:    {self.registered}
         """
 
@@ -27,13 +29,13 @@ class Student:
     def __init__(self,name,id,courses):
         self.name = name
         self.ID = id
-        self.courses = [Course(name=data["name"],id=data["ID"],credits=data["credits"],semester=data["semester"],registered=data["registered"]) for data in courses]
+        self.courses = [Course(name=data["name"],id=data["ID"],credits=data["credits"],semester=data["semester"],year=data["year"],registered=data["registered"]) for data in courses]
 
     def adddCourse(self,course):
         self.courses.append(course)
 
     def getCourses(self,semester,year):
-        return (course for course in self.courses if course.semester == semester)
+        return (course for course in self.courses if (course.semester == semester and course.year == year))
 
     def totalCreds(self):
         return sum([course.credits for course in self.courses])
@@ -68,6 +70,7 @@ def write(student_list, file_path):
                 "name":course.name,
                 "ID":course.ID,
                 "semester":course.semester,
+                "year":course.year,
                 "credits":course.credits,
                 "registered":course.registered
             })
@@ -126,5 +129,9 @@ def profile(root,student,student_list,frame=None):
     Button(frame,text="Home",command=lambda r=root,f=frame,s=student_list: setHome(root=r,student_list=s,frame=f)).grid(column=0,row=3)
     frame.pack()
 
-
+def createFrame(student_list):
+    root = Tk()
+    root.geometry("600x250")
+    setHome(root,student_list)
+    root.mainloop()
 
