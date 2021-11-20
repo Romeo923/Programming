@@ -13,9 +13,6 @@ class Course:
         self.year = year
         self.registered = registered
 
-    def __eq__(self, course: 'Course'):
-        return self.name == course.name and self.ID == course.ID and self.credits == course.credits and self.semester == course.semester and self.year == course.year and self.registered == course.registered 
-
     def __str__(self):
         return f"""
         Course Name:   {self.name}
