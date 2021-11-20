@@ -27,19 +27,11 @@
           "year": 1,
           "credits": 3,
           "registered": "True"
-        },
-        {
-          "name": "Into to Japanese",
-          "ID": "JP-101",
-          "semester": "Fall",
-          "year": 1,
-          "credits": 2,
-          "registered": "False"
         }
       ]
     },
     {
-      "name": "Santa Clause",
+      "name": "Santa Claus",
       "ID": 123456789,
       "courses": [
         {

@@ -1,6 +1,6 @@
 import json
 from tkinter import *
-# from tkmacosx import *
+from tkmacosx import *
 from tkinter import ttk
 
 class Course:
@@ -13,7 +13,7 @@ class Course:
         self.year = year
         self.registered = registered
 
-    def __eq__(self, course: 'Course') -> bool:
+    def __eq__(self, course: 'Course'):
         return self.name == course.name and self.ID == course.ID and self.credits == course.credits and self.semester == course.semester and self.year == course.year and self.registered == course.registered 
 
     def __str__(self):
@@ -128,15 +128,15 @@ def profile(student,state):
     state.frame.destroy()
     state.frame = Frame(state.root)
 
-    Label(state.frame,text="Student Name: ").grid(column=0,row=0)
+    Label(state.frame,text="Student Name: ").grid(column=1,row=0)
     name = Entry(state.frame)
     name.insert(0,student.name)
-    name.grid(column=1,row=0)
+    name.grid(column=2,row=0)
 
-    Label(state.frame,text="Student ID: ").grid(column=0,row=1)
+    Label(state.frame,text="Student ID: ").grid(column=1,row=1)
     id = Entry(state.frame)
     id.insert(0,student.ID)
-    id.grid(column=1,row=1)
+    id.grid(column=2,row=1)
 
     tree = ttk.Treeview(state.frame)
     tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
@@ -154,7 +154,7 @@ def profile(student,state):
         tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
 
     tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','','Total Credits:',student.totalCreds()))
-    tree.tag_configure('total',foreground='purple',background='orange')
+    tree.tag_configure('total',foreground='white',background='black')
     tree.grid(columnspan=4,row=2)
 
     Label(state.frame,text="Registered Status").grid(column=0,row=3)
@@ -183,7 +183,7 @@ def addCourse(student,state,course):
 def createFrame(file_path):
 
     root = Tk()
-    root.geometry("600x750")
+    root.geometry("800x750")
     frame = Frame(root)
 
     state = State(file_path=file_path,root=root,student_list=None,frame=frame)
