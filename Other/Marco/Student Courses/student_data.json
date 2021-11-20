@@ -19,14 +19,6 @@
           "year": 3,
           "credits": 4,
           "registered": false
-        },
-        {
-          "name": "Deep Learning",
-          "ID": "CPEG-586-11",
-          "semester": "Fall",
-          "year": 1,
-          "credits": 3,
-          "registered": "True"
         }
       ]
     },
