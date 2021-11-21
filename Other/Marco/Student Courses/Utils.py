@@ -11,7 +11,7 @@ class Course:
         self.credits = credits
         self.semester = semester
         self.year = year
-        self.registered = registered
+        self.registered = registered if type(registered) == bool else True if registered.lower() == 'true' else False
 
     def __str__(self):
         return f"""
