@@ -1,6 +1,6 @@
 import json
 from tkinter import *
-# from tkmacosx import *
+from tkmacosx import *
 from tkinter import ttk
 
 class Course:
