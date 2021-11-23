@@ -1,9 +1,9 @@
-PWD /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2
+PWD /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.tex
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.log
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.tex
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -366,10 +366,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux
-INPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -400,10 +400,11 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-OUTPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.pdf
+OUTPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux
+INPUT /Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

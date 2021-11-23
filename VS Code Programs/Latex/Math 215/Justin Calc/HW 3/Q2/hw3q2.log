@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  30 SEP 2021 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.23)  23 NOV 2021 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.tex"
-(/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.tex
+**"/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.tex"
+(/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -277,7 +277,7 @@ File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box59
-) (/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux)
+) (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux)
 \openout1 = `hw3q2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -313,7 +313,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
+ on input line 6.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 8.
@@ -325,30 +327,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
+(Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
+(Font)              <5> on input line 12.
 
-Overfull \hbox (6.99463pt too wide) in paragraph at lines 16--17
+Overfull \hbox (8.50435pt too wide) in paragraph at lines 32--41
 [][] 
  []
 
 [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux) ) 
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux) ) 
 Here is how much of TeX's memory you used:
- 21444 strings out of 478994
- 576188 string characters out of 5858184
- 996572 words of memory out of 5000000
- 38623 multiletter control sequences out of 15000+600000
+ 21445 strings out of 478994
+ 576472 string characters out of 5858184
+ 998572 words of memory out of 5000000
+ 38624 multiletter control sequences out of 15000+600000
  406465 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,6n,103p,785b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.pdf" (1 page, 40541 bytes).
+ 102i,6n,103p,788b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.pdf" (2 pages, 55416 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

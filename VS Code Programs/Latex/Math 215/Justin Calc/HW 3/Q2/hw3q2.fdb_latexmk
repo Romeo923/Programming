@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633039331 "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.tex" "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.pdf" "hw3q2" 1633039333
-  "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.aux" 1633039333 32 3985256e7290058c681f74d7a3565a19 ""
-  "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.tex" 1633039331 603 a1fbb9596b249b2d21dfb0dc0327f4bc ""
+["pdflatex"] 1637692107 "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.tex" "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.pdf" "hw3q2" 1637692108
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.aux" 1637692108 32 044b7f8fc9779af7531264e0c5c84b6d ""
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.tex" 1637692099 979 2ffe06fb26769ba61c371d1dfc8f1485 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -17,6 +17,7 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1601326656 992 855ff26741653ab54814101ca36e153c ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1601326656 43820 1fef971b75380574ab35a0d37fd92608 ""
@@ -139,11 +140,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632432670 2724736 6a1aeec5b22172b001749bc38fa9ed3c ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "hw3q2.aux" 1633039333 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "hw3q2.tex" 1633039331 603 a1fbb9596b249b2d21dfb0dc0327f4bc ""
+  "hw3q2.aux" 1637692108 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "hw3q2.tex" 1637692099 979 2ffe06fb26769ba61c371d1dfc8f1485 ""
   (generated)
-  "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.pdf"
-  "hw3q2.pdf"
-  "/Users/romeo/Desktop/Programming/Latex/Calc HW3/JustinQ2/hw3q2.log"
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.log"
   "hw3q2.aux"
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Math 215/Justin Calc/HW 3/Q2/hw3q2.pdf"
   "hw3q2.log"
+  "hw3q2.pdf"
