@@ -135,24 +135,7 @@ def profile(student,state):
     id.insert(0,student.ID)
     id.grid(column=2,row=1)
 
-    tree = ttk.Treeview(state.frame)
-    tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
-    tree.column('#0',width=0,stretch=NO)
-    tree.column('Registered',width=120,anchor=CENTER)
-    tree.column('Course Name',width=120,anchor=CENTER)
-    tree.column('Course No.',width=120,anchor=CENTER)
-    tree.column('Credits',width=120,anchor=CENTER)
-    tree.heading('Registered',text="Registered")
-    tree.heading('Course Name',text="Course Name")
-    tree.heading('Course No.',text="Course No.")
-    tree.heading('Credits',text="Credits")
-
-    for i, course in enumerate(student.courses):
-        tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
-
-    tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','','Total Credits:',student.totalCreds()))
-    tree.tag_configure('total',foreground='white',background='black')
-    tree.grid(columnspan=4,row=2)
+    generateTree(student=student,state=state)
 
     Label(state.frame,text="Registered Status").grid(column=0,row=3)
     registered = Entry(state.frame)
@@ -172,6 +155,26 @@ def profile(student,state):
     Button(state.frame,text="Delete Student",command=lambda s=student, st = state: deleteStudent(student=s, state=st)).grid(column=2,row=5)
     Button(state.frame,text="Home",command=lambda st = state: home(state=st)).grid(column=3,row=5)
     state.frame.pack()
+
+def generateTree(student,state):
+    tree = ttk.Treeview(state.frame)
+    tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
+    tree.column('#0',width=0,stretch=NO)
+    tree.column('Registered',width=120,anchor=CENTER)
+    tree.column('Course Name',width=120,anchor=CENTER)
+    tree.column('Course No.',width=120,anchor=CENTER)
+    tree.column('Credits',width=120,anchor=CENTER)
+    tree.heading('Registered',text="Registered")
+    tree.heading('Course Name',text="Course Name")
+    tree.heading('Course No.',text="Course No.")
+    tree.heading('Credits',text="Credits")
+
+    for i, course in enumerate(student.courses):
+        tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
+
+    tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','','Total Credits:',student.totalCreds()))
+    tree.tag_configure('total',foreground='white',background='black')
+    tree.grid(columnspan=4,row=2)
 
 def addCourse(student,state,course):
         student.courses.append(course)
