@@ -135,7 +135,7 @@ def profile(student,state):
     id.insert(0,student.ID)
     id.grid(column=2,row=1)
 
-    generateTree(student=student,state=state)
+    tree = generateTree(student=student,state=state)
 
     Label(state.frame,text="Registered Status").grid(column=0,row=3)
     registered = Entry(state.frame)
@@ -150,7 +150,7 @@ def profile(student,state):
     credits = Entry(state.frame)
     credits.grid(column=3,row=4)
     
-    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state,course=Course(name=cn.get(),id=cid.get(),semester='Fall',credits=int(credits.get()),year=1,registered=registered.get()))).grid(column=0,row=5)
+    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state,course=Course(name=cn.get(),id=cid.get(),semester='Fall',credits=int(credits.get()),year=1,registered=registered.get()),tree=tree)).grid(column=0,row=5)
     Button(state.frame,text="Save",command=lambda s=student,st = state : save(student=s,state=st,name=name.get(),id=int(id.get()))).grid(column=1,row=5)
     Button(state.frame,text="Delete Student",command=lambda s=student, st = state: deleteStudent(student=s, state=st)).grid(column=2,row=5)
     Button(state.frame,text="Home",command=lambda st = state: home(state=st)).grid(column=3,row=5)
@@ -176,7 +176,9 @@ def generateTree(student,state):
     tree.tag_configure('total',foreground='white',background='black')
     tree.grid(columnspan=4,row=2)
 
-def addCourse(student,state,course):
+    return tree
+
+def addCourse(student,state,course,tree):
         student.courses.append(course)
         profile(student=student,state=state)
 
