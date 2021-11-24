@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath}
+\author{Justin Steinberg}
+\date{October 2021}
+
+\begin{document}
+
+\section{Math 323 Homework 5 Question 1}
+Given: 
+\begin{equation}
+    ad-bc  \neq  0 
+\end{equation}
+
+Show
+\begin{equation}
+A^-^1A =   \begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
+\end{equation}
+
+Consider:
+\begin{equation}
+A^-^1A =  \frac{1}{ad-bc}  \begin{pmatrix}
+d & -b \\
+-c & a
+\end{pmatrix} \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+ = \frac{1}{ad-bc} \begin{pmatrix}
+ad - bc & bd - bd \\
+ac - ac & ad - bc
+\end{pmatrix}
+\end{equation}
+
+Then distributing the coefficient
+\begin{equation}
+    \begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
+\end{equation}
+
+Q.E.D.
+\end{document}
