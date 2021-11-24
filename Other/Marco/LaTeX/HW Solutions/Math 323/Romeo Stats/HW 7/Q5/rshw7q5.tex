@@ -1,9 +1,41 @@
 \documentclass{article}
-\usepackage{romeo}
+\usepackage{amsmath,amssymb}
+
+\title{Homework 7 Question 5}
+\author{}
+\date{}
 
 \begin{document}
-    A. (A int B) U (A int !B) = A int (B U !B) = A int S = A
-    B. B U (A int !B) = (B int A) U (B int !B) = (B int A) = A
-    C. (A int B) int (A int !B) = A int (B int !B) = empty
-    D. B int (A int !B) = A int (B int !B) = empty
+
+    \maketitle
+
+    A) 
+    \begin{center}
+        (A $\cap$ B) $\cup$ (A $\cap$ $\bar{B}$)\\
+        A $\cap$ (B $\cup$ $\bar{B}$)\\
+        A $\cap$ S\\
+        A
+    \end{center}
+
+    B)
+    \begin{center}
+        B $\cup$ (A $\cap$ $\bar{B}$)\\
+        (B $\cap$ A) $\cup$ (B $\cap$ $\bar{B}$)\\
+        (B $\cap$ A)\\
+        A
+    \end{center}
+    
+    C)
+    \begin{center}
+        (A $\cap$ B) $\cap$ (A $\cap$ $\bar{B}$)\\
+        A $\cap$ (B $\cap$ $\bar{B}$)\\
+        $\varnothing$
+    \end{center} 
+
+    D)
+    \begin{center}
+        B $\cap$ (A $\cap$ $\bar{B}$)\\
+        A $\cap$ (B $\cap$ $\bar{B}$)\\
+        $\varnothing$ 
+    \end{center}
 \end{document}
