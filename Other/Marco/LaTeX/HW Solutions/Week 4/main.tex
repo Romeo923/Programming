@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margins=1.5]{geometry}
+
+\begin{document}
+
+
+
+\section{Math 215 Homwork 5 Question 3}
+
+Evaluate as an infinite series
+\begin{equation}
+    \int{\frac{e^x}{x} dx}
+\end{equation}
+
+using a Taylor Expansion on $e^x$:
+\begin{equation}
+    \int{\frac{1}{x}(1+\frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!} .... )dx}
+\end{equation}
+\begin{equation}
+    = \int{(\frac{1}{x}+1+\frac{x}{2!}+\frac{x^2}{3!}+\frac{x^3}{4!} .... )dx}
+\end{equation}
+\begin{equation}
+    = \int\frac{1}{x}dx+\int dx+\int\frac{x}{2!}dx+\int\frac{x^2}{3!}dx+\int\frac{x^3}{4!}dx ....
+\end{equation}
+\begin{equation}
+    = C + ln|x| + \frac{x^2}{2\cdot2!}+\frac{x^3}{3\cdot3!}+\frac{x^4}{4\cdot4!} ....
+\end{equation}
+\begin{equation}
+    = C + ln|x| + \sum\frac{x^n}{n\cdotn!}
+\end{equation}
+Q.E.D
+\end{document}
