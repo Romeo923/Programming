@@ -1,0 +1,42 @@
+% This is a simple sample document.  For more complicated documents take a look in the excersice tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+
+\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+
+\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter{\opair}{\langle}{\rangle}
+
+\title{Math215} % Sets article title
+\author{Homework 4, Problem 3} % Sets authors name
+\date{\today} % Sets date for date compiled
+
+% The preamble ends with the command \begin{document}
+\begin{document} % All begin commands must be paired with an end command somewhere
+    \maketitle % creates title using infromation in preamble (title, author, date)
+    
+    \section*{10.5 Pr31} % creates a section
+    Find and equation of the plane that passes through the point (1,5,1) and is perpendicular to the planes 2x + y - 2z = 2 and x + 3z = 4}
+    \vspace{0.5in}\\
+    Finding vector normal to the plane
+    \begin{equation}
+      <a_1,a_2,a_3> \times <b_1,b_2,b_3> = <a_yb_z-a_zb_y,a_zb_x-a_xb_z,a_xb_y-a_yb_x>
+    \end{equation}
+    \begin{equation*}
+      <2,1,-2> \times <1,0,3> = <(1)(3)-(-2)(0),(-2)(1)-(2)(3),(2)(0)-(1)(1)> = <3,-8,-1>
+    \end{equation*}
+    Finding normal vector through the point
+    \begin{equation}
+      a(x-x_0) + b(y-y_0) + c(z-z_0) = 0
+    \end{equation}
+    \begin{equation*}
+      3(x-1) - 8(y-5) - (z-1) = 0
+    \end{equation*}
+    \begin{equation*}
+      3x - 3 - 8y + 40 - z + 1 = 0
+    \end{equation*}
+    \begin{equation*}
+      3x - 8y - z = -38
+    \end{equation*}
+    
+\end{document} % This is the end of the document
