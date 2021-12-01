@@ -17,3 +17,13 @@ C:\Users\Romeo\Desktop\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\D
 C:\Users\Romeo\Desktop\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.csproj.CoreCompileInputs.cache
 C:\Users\Romeo\Desktop\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.exe
 C:\Users\Romeo\Desktop\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.pdb
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\bin\Debug\ConvolFilters.exe.config
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\bin\Debug\ConvolFilters.exe
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\bin\Debug\ConvolFilters.pdb
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.csproj.AssemblyReference.cache
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.Form1.resources
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.Properties.Resources.resources
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.exe
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\ConvolFilters\ConvolFilters\obj\Debug\ConvolFilters.pdb
