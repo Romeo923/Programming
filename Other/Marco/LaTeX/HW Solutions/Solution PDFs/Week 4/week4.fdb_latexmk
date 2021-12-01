@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638335202 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex" "week4.pdf" "week4" 1638335203
+["pdflatex"] 1638346726 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex" "week4.pdf" "week4" 1638346728
   "C:/Users/Romeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637782639 9769173 0dd5e7e0947e9803c56001c295b1c6d3 ""
   "C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637782622 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247593066 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -7,8 +7,13 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247593067 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247593067 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247593066 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247593067 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247593066 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
+  "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247593066 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1583523400 6501 4011d89d9621e0b0901138815ba5ff29 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg" 1616063685 584 2a1075dd71571459f59146da9f7502ad ""
@@ -39,11 +44,13 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/pdfpages/pppdftex.def" 1615069272 6591 7d4f68a47a8f9dceeb2327354264a7a7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex" 1638335201 275 c33779741a3671dbc35a46d96b75b986 ""
+  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex" 1638346724 270 d1e54f46ac631e85891e7c5a8f5b33f7 ""
+  "calc3hw5.pdf" 1638335859 109953 b82c528f8601a71002ed57a586a3578b ""
+  "hw5q1.pdf" 1638346675 108580 976056df4b582a9c1f43dc283fdfa78a ""
   "main.pdf" 1638335044 76565 5b0abb72967052c0ba8ddc3a83d91f45 ""
-  "week4.aux" 1638335203 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "week4.tex" 1638335201 275 c33779741a3671dbc35a46d96b75b986 ""
+  "week4.aux" 1638346727 32 77e0dffd05b653a64f0caf3eb9bb454a "pdflatex"
+  "week4.tex" 1638346724 270 d1e54f46ac631e85891e7c5a8f5b33f7 ""
   (generated)
-  "week4.aux"
   "week4.pdf"
+  "week4.aux"
   "week4.log"

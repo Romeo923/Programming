@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638335144 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 3/week3.tex" "week3.pdf" "week3" 1638335145
+["pdflatex"] 1638340774 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 3/week3.tex" "week3.pdf" "week3" 1638340775
   "C:/Users/Romeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637782639 9769173 0dd5e7e0947e9803c56001c295b1c6d3 ""
   "C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637782622 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247593066 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -42,12 +42,13 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/pdfpages/pppdftex.def" 1615069272 6591 7d4f68a47a8f9dceeb2327354264a7a7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 3/week3.tex" 1638335142 273 64bcab80fb86968c9f7f4057de2b884a ""
-  "hchw4q3.pdf" 1637770529 88259 bdd805039bc46e85794ea021a7de73cf ""
+  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 3/week3.tex" 1638340772 272 482ab6afda26b6d449e511ae84856487 ""
+  "calc3hw4.pdf" 1638335835 76944 67a565b2fcafaea44d370dbdf2a2f072 ""
   "main.pdf" 1638335019 124274 0b39a0fbe0fc29f1ea50d7db32ef299f ""
-  "week3.aux" 1638335145 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "week3.tex" 1638335142 273 64bcab80fb86968c9f7f4057de2b884a ""
+  "rchw4q2.pdf" 1638340763 72888 05a7c41fe8e3d361090c9d6c4795d200 ""
+  "week3.aux" 1638340775 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "week3.tex" 1638340772 272 482ab6afda26b6d449e511ae84856487 ""
   (generated)
-  "week3.pdf"
   "week3.aux"
   "week3.log"
+  "week3.pdf"

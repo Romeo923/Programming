@@ -1,0 +1,109 @@
+% This is a simple sample document.  For more complicated documents take a look in the excersice tab. Note that everything that comes after a % symbol is treated as comment and ignored when the code is compiled.
+
+\documentclass{article} % \documentclass{} is the first command in any LaTeX code.  It is used to define what kind of document you are creating such as an article or a book, and begins the document preamble
+
+\usepackage{amsmath} % \usepackage is a command that allows you to add functionality to your LaTeX code
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter{\opair}{\langle}{\rangle}
+
+\title{Math 215 Homework 5} % Sets article title
+\author{} % Sets authors name
+\date{} % Sets date for date compiled
+
+% The preamble ends with the command \begin{document}
+\begin{document} % All begin commands must be paired with an end command somewhere
+    \maketitle % creates title using infromation in preamble (title, author, date)
+    
+    \section*{Problem 2 a} % creates a section
+    Explain why the series\\
+    1.6 - 0.8(x-1) + 0.4(x-1)$^2$ - 0.1(x-1)$^3$ + ...\\
+    is $not$ the Taylor series of $f$ centered at 1\\\\
+    When x = 0,
+    \begin{center}
+        1.6 - 0.8(0-1) + 0.4(0-1)$^2$ - 0.1(0-1)$^3$ + ...\\
+        1.6 + 0.8 + 0.4 + 0.1$^3$ + ...\\
+        $\approx$ 2.9\\        
+    \end{center}
+
+    However, according to the graph, $f$(0) $\approx$ 0.5\\
+
+    \section*{Problem 2 b} % creates a section
+    Explain why the series\\
+    2.8 + 0.5(x-2) + 1.5(x-2)$^2$ - 0.1(x-2)$^3$ + ...\\
+    is $not$ the Taylor series of $f$ centered at 2\\\\
+    When x = 0,
+    \begin{center}
+        2.8 + 0.5(0-2) + 1.5(0-2)$^2$ - 0.1(0-2)$^3$ + ...\\
+        2.8 - 1 + 6 + 0.8 + ...\\
+        $\approx$ 8.6\\ 
+    \end{center}
+
+    However, according to the graph, $f$(0) $\approx$ 0.5\\
+
+    \vspace{2.5cm}
+    \section*{Problem 11} % creates a section
+    Find the Taylor series for $f$(x) centered at the given value of a.\\\\
+    $f$(x) = x$^4$ - 3x$^2$ + 1, a = 1\\
+
+    \begin{tabular}{l}
+        $f$(x) = x$^4$ - 3x$^2$ + 1\\
+        $f$(a) = (1)$^4$ - 3(1)$^2$ + 1 = -1\\
+        $f^{\prime}$(x) = 4x$^3$ - 6x\\
+        $f^{\prime}$(a) = 4(1)$^3$ - 6(1) = -2\\
+        $f^{\prime\prime}$(x) = 12x$^2$ - 6\\
+        $f^{\prime\prime}$(a) = 12(1)$^2$ - 6 = 6\\
+        $f^{\prime\prime\prime}$(x) = 24x\\
+        $f^{\prime\prime\prime}$(a) = 24(1) = 24\\\\  
+    \end{tabular}
+    
+    \begin{tabular}{l}
+        $f$(x) = $f$(a) + $f^{\prime}$(a)(x-a) + $\frac{f^{\prime\prime}(a)(x-a)^2}{2!}$ + $\frac{f^{\prime\prime\prime}(a)(x-a)^3}{3!}$ + ...\\\\
+        $f$(x) = -1 + -2(x-1) + $\frac{6(x-1)^2}{2}$ + $\frac{24(x-1)^3}{6}$ + ...\\\\
+        $f$(x) = -1 - 2(x-1) + 3(x-1)$^2$ + 4(x-1)$^3$ + ...\\\\   
+    \end{tabular}
+    
+
+    \section*{Problem 12} % creates a section
+    Find the Taylor series for $f$(x) centered at the given value of a.\\\\
+    $f$(x) = x - x$^3$, a = -2\\
+
+    \begin{tabular}{l}
+        $f$(x) = x - x$^3$\\
+        $f$(a) = (-2) - (-2)$^3$ = 6\\
+        $f^{\prime}$(x) = 1 - 3x$^2$\\
+        $f^{\prime}$(a) = 1 - 3(-2)$^2$ = -11\\
+        $f^{\prime\prime}$(x) = -6x\\
+        $f^{\prime\prime}$(a) = -6(-2) = 12\\
+        $f^{\prime\prime\prime}$(x) = -6\\
+        $f^{\prime\prime\prime}$(a) = -6\\\\  
+    \end{tabular}
+    
+    \begin{tabular}{l}
+        $f$(x) = $f$(a) + $f^{\prime}$(a)(x-a) + $\frac{f^{\prime\prime}(a)(x-a)^2}{2!}$ + $\frac{f^{\prime\prime\prime}(a)(x-a)^3}{3!}$ + ...\\\\
+        $f$(x) = 6 + -11(x+2) + $\frac{12(x+2)^2}{2}$ + $\frac{-6(x+2)^3}{6}$ + ...\\\\
+        $f$(x) = 6 - 11(x+2) + 6(x+2)$^2$ - (x+2)$^3$ + ...\\\\   
+    \end{tabular}
+
+
+    \section*{Problem 13} % creates a section
+    Find the Taylor series for $f$(x) centered at the given value of a.\\\\
+    $f$(x) = ln(x), a = 2\\
+
+    \begin{tabular}{l}
+        $f$(x) = ln(x)\\\\
+        $f$(a) = ln(2)\\\\
+        $f^{\prime}$(x) = $\frac{1}{x}$\\\\
+        $f^{\prime}$(a) = $\frac{1}{2}$\\\\
+        $f^{\prime\prime}$(x) = -$\frac{1}{x^2}$\\\\
+        $f^{\prime\prime}$(a) = -$\frac{1}{2^2}$ = -$\frac{1}{4}$\\\\
+        $f^{\prime\prime\prime}$(x) = $\frac{2}{x^3}$\\\\
+        $f^{\prime\prime\prime}$(a) = $\frac{2}{2^3}$ = $\frac{1}{4}$\\\\  
+    \end{tabular}
+    
+    \begin{tabular}{l}
+        $f$(x) = $f$(a) + $f^{\prime}$(a)(x-a) + $\frac{f^{\prime\prime}(a)(x-a)^2}{2!}$ + $\frac{f^{\prime\prime\prime}(a)(x-a)^3}{3!}$ + ...\\\\
+        $f$(x) = ln(2) + $\frac{1}{2}$(x-2) + $\frac{-\frac{1}{4}(x-2)^2}{2}$ + $\frac{\frac{1}{4}(x-2)^3}{6}$ + ...\\\\
+        $f$(x) = ln(2) + $\frac{(x-2)}{2}$ - $\frac{(x-2)^2}{8}$ + $\frac{(x-2)^3}{24}$ + ...\\\\   
+    \end{tabular}
+\end{document} % This is the end of the document

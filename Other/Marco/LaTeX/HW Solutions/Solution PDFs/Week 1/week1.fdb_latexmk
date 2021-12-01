@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638335093 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 1/week1.tex" "week1.pdf" "week1" 1638335095
+["pdflatex"] 1638336029 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 1/week1.tex" "week1.pdf" "week1" 1638336031
   "C:/Users/Romeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637782639 9769173 0dd5e7e0947e9803c56001c295b1c6d3 ""
   "C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637782622 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247593066 34811 78b52f49e893bcba91bd7581cdc144c0 ""
@@ -40,13 +40,13 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/pdfpages/pppdftex.def" 1615069272 6591 7d4f68a47a8f9dceeb2327354264a7a7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1636710260 10214 00ce62e730d0cfe22b35e8f1c84949c7 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 1/week1.tex" 1638335091 273 d5cf1b5c4a99a80c7af8193036c552e1 ""
-  "hchw3q8.pdf" 1637770191 86433 01d66a0f972b30fd95a6f98ee13672e0 ""
+  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 1/week1.tex" 1638336029 276 e4f75adb9c1bec37b1ca843247eef43b ""
+  "calc3hw3q8.pdf" 1638335808 74849 8917df9a01095b4c55b4fbfa246b35a1 ""
   "main.pdf" 1638334469 51257 eb26fb3261983a28ef56e477e60086d5 ""
   "rchw3q3.pdf" 1637770191 56320 15e71dd4a30a8acbc4ab1fea93b292b9 ""
-  "week1.aux" 1638335095 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
-  "week1.tex" 1638335091 273 d5cf1b5c4a99a80c7af8193036c552e1 ""
+  "week1.aux" 1638336031 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
+  "week1.tex" 1638336029 276 e4f75adb9c1bec37b1ca843247eef43b ""
   (generated)
+  "week1.pdf"
   "week1.log"
   "week1.aux"
-  "week1.pdf"

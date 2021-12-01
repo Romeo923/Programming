@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  1 DEC 2021 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  1 DEC 2021 03:18
 entering extended mode
 **"c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex"
 (c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Solution PDFs/Week 4/week4.tex
@@ -213,51 +213,155 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<main.pdf, id=1, 614.295pt x 794.97pt>
-File: main.pdf Graphic file (type pdf)
-<use main.pdf>
-Package pdftex.def Info: main.pdf  used on input line 10.
+<hw5q1.pdf, id=1, 614.295pt x 794.97pt>
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf>
+Package pdftex.def Info: hw5q1.pdf  used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf>
-Package pdftex.def Info: main.pdf  used on input line 10.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf>
+Package pdftex.def Info: hw5q1.pdf  used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<main.pdf, id=4, page=1, 614.295pt x 794.97pt>
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 10.
+<hw5q1.pdf, id=4, page=1, 614.295pt x 794.97pt>
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 1>
+Package pdftex.def Info: hw5q1.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 10.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 1>
+Package pdftex.def Info: hw5q1.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 10.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 1>
+Package pdftex.def Info: hw5q1.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 10.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 1>
+Package pdftex.def Info: hw5q1.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: main.pdf Graphic file (type pdf)
-<use main.pdf, page 1>
-Package pdftex.def Info: main.pdf , page1 used on input line 10.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 1>
+Package pdftex.def Info: hw5q1.pdf , page1 used on input line 8.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1
 
- <./main.pdf{C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map}>] (week4.aux) ) 
+ <./hw5q1.pdf{C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map}>]
+<hw5q1.pdf, id=46, page=2, 614.295pt x 794.97pt>
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 2>
+Package pdftex.def Info: hw5q1.pdf , page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 2>
+Package pdftex.def Info: hw5q1.pdf , page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 2>
+Package pdftex.def Info: hw5q1.pdf , page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2 <./hw5q1.pdf>]
+<hw5q1.pdf, id=74, page=3, 614.295pt x 794.97pt>
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 3>
+Package pdftex.def Info: hw5q1.pdf , page3 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 3>
+Package pdftex.def Info: hw5q1.pdf , page3 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: hw5q1.pdf Graphic file (type pdf)
+<use hw5q1.pdf, page 3>
+Package pdftex.def Info: hw5q1.pdf , page3 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3 <./hw5q1.pdf>]
+<calc3hw5.pdf, id=78, 614.295pt x 794.97pt>
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf>
+Package pdftex.def Info: calc3hw5.pdf  used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf>
+Package pdftex.def Info: calc3hw5.pdf  used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<calc3hw5.pdf, id=81, page=1, 614.295pt x 794.97pt>
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 1>
+Package pdftex.def Info: calc3hw5.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 1>
+Package pdftex.def Info: calc3hw5.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 1>
+Package pdftex.def Info: calc3hw5.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 1>
+Package pdftex.def Info: calc3hw5.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 1>
+Package pdftex.def Info: calc3hw5.pdf , page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [4 <./calc3hw5.pdf>]
+<calc3hw5.pdf, id=126, page=2, 614.295pt x 794.97pt>
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 2>
+Package pdftex.def Info: calc3hw5.pdf , page2 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 2>
+Package pdftex.def Info: calc3hw5.pdf , page2 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: calc3hw5.pdf Graphic file (type pdf)
+<use calc3hw5.pdf, page 2>
+Package pdftex.def Info: calc3hw5.pdf , page2 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [5 <./calc3hw5.pdf>]
+<main.pdf, id=130, 614.295pt x 794.97pt>
+File: main.pdf Graphic file (type pdf)
+<use main.pdf>
+Package pdftex.def Info: main.pdf  used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf>
+Package pdftex.def Info: main.pdf  used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<main.pdf, id=133, page=1, 614.295pt x 794.97pt>
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: main.pdf Graphic file (type pdf)
+<use main.pdf, page 1>
+Package pdftex.def Info: main.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [6 <./main.pdf>] (week4.aux) ) 
 Here is how much of TeX's memory you used:
- 3923 strings out of 478681
- 64193 string characters out of 2846534
+ 3958 strings out of 478681
+ 64966 string characters out of 2846534
  366610 words of memory out of 3000000
- 22009 multiletter control sequences out of 15000+600000
+ 22040 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,76p,319b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on week4.pdf (1 page, 78438 bytes).
+ 70i,17n,76p,319b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on week4.pdf (6 pages, 164676 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 179 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
