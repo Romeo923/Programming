@@ -107,4 +107,5 @@ public:
 	void   ls();
 	size_t read(size_t inumber, unsigned char *data, size_t length, size_t offset);
 	size_t search(const char* file_name);
+	size_t search(const char* file_name, uint32_t* inode_meta2);
 };

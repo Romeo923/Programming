@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638334561 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Week 3 215/main.tex" "main.pdf" "main" 1638334563
+["pdflatex"] 1638628361 "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Justin/Week 3 215/main.tex" "main.pdf" "main" 1638628363
   "C:/Users/Romeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637782639 9769173 0dd5e7e0947e9803c56001c295b1c6d3 ""
   "C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637782622 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -132,12 +132,12 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1621069645 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/pgfplots/pgfplots.sty" 1621071861 4904 ee78b44e85d6fccf08cd99370557481e ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Week 3 215/main.tex" 1638188036 999 97d6a85cdc62b97308264529a41132dd ""
+  "c:/Users/Romeo/Desktop/Coding/Programming/Other/Marco/LaTeX/HW Solutions/Justin/Week 3 215/main.tex" 1638335015 999 97d6a85cdc62b97308264529a41132dd ""
   "ellipsoid.png" 1638188036 32814 9a73bc3bfd6048b66e9afa79736b2644 ""
   "hyperbaloid of two sheets.png" 1638188036 30144 e577ec22a504b848d2e40364698dcda1 ""
-  "main.aux" 1638334563 150 91871c27b75771765c500efb849c64b0 "pdflatex"
-  "main.tex" 1638188036 999 97d6a85cdc62b97308264529a41132dd ""
+  "main.aux" 1638628363 150 91871c27b75771765c500efb849c64b0 "pdflatex"
+  "main.tex" 1638335015 999 97d6a85cdc62b97308264529a41132dd ""
   (generated)
-  "main.log"
   "main.aux"
+  "main.log"
   "main.pdf"

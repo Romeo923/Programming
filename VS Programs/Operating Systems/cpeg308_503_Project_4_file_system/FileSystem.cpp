@@ -255,6 +255,9 @@ size_t FileSystem::create(char* name) {
 bool FileSystem::remove(char* name) {
 	//TODO
 	// search for file name
+	uint32_t inode_meta2;
+	uint32_t inode_meta1 = search(name, &inode_meta2);
+
 	// get inode pointer for meta2 clear all direct pointers
 	// mark data block as free free
 	// mark meta2 as free
@@ -263,7 +266,7 @@ bool FileSystem::remove(char* name) {
 	// mark meta1 as free
 	// mark meta1 inode as dirty
 
-	return true;
+	return false;
 }
 
 void FileSystem::ls() {
@@ -330,6 +333,27 @@ size_t FileSystem::search(const char* file_name)
 		Inode_Meta1* pInode = (Inode_Meta1*)getINode(i);
 		if (pInode != NULL && pInode->Valid == 1 && strcmp(pInode->FileName, file_name)==0) {
 			inode = pInode->Inode;
+		}
+	}
+	return inode;
+}
+
+size_t FileSystem::search(const char* file_name, uint32_t* inode_meta2)
+{
+	//loop through all inodes
+	int Meta1_inode_end = (super_block.Super.Meta2_Block_start - super_block.Super.Meta1_Block_start)
+		* INODES_PER_BLOCK;
+	int Meta2_inode_end = (super_block.Super.Data_Block_start - super_block.Super.Meta2_Block_start)
+		* INODES_PER_BLOCK;
+	if ((Meta1_inode_end + Meta2_inode_end) != (super_block.Super.InodeBlocks * INODES_PER_BLOCK))
+		throw std::runtime_error("Inode error!");
+	size_t inode = INVALIDE_RETURN;
+	for (int i = 0; i < Meta1_inode_end; i++)
+	{
+		Inode_Meta1* pInode = (Inode_Meta1*)getINode(i);
+		if (pInode != NULL && pInode->Valid == 1 && strcmp(pInode->FileName, file_name) == 0) {
+			*inode_meta2 = pInode->Inode;
+			return i;
 		}
 	}
 	return inode;
