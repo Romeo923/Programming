@@ -259,12 +259,20 @@ bool FileSystem::remove(char* name) {
 	uint32_t inode_meta1 = search(name, &inode_meta2);
 
 	// get inode pointer for meta2 clear all direct pointers
+	inode_meta2 = get_Meta2_start_inode();
 	// mark data block as free free
+	setDataBlockFreeSpot(&Data_BITMAP,0);
 	// mark meta2 as free
+	setMeta2FreeSpot(&Meta2_BITMAP,inode_meta2);
 	// mark meta2 inode as dirty
+	inode_blocks_dirty[int(inode_meta2/INODES_PER_BLOCK)] = true;
 	// clear all info in meta1
+	
+	
 	// mark meta1 as free
+	setMeta1FreeSpot(&Meta1_BITMAP,inode_meta1);
 	// mark meta1 inode as dirty
+	inode_blocks_dirty[int(inode_meta1/INODES_PER_BLOCK)] = true;
 
 	return false;
 }
@@ -301,19 +309,21 @@ void FileSystem::ls() {
 // returns the number of bytes read
 size_t FileSystem::read(size_t inumber, unsigned char *data, size_t length, size_t offset) {
 	int direct_pointer_index;
-	//TODO
-	// calculate the direct_pointer_index based on the offset
-	// get the data block number
-	// read the data block
-
 	int data_block_number;
 	DWORD NumberOfBytesRead = 0;
 	
 	//TODO
 	// calculate the direct_pointer_index based on the offset
+	
+	direct_pointer_index = int(offset /length);;
 	// get the data block number
+	data_block_number = getFreeSpot(&Data_BITMAP) + super_block.Super.Data_Block_start;;
 	//if Inode is Valid and data block number greater than zero
 	// read the data block
+	if (isValidInode(inumber) && data_block_number > 0) {
+
+		NumberOfBytesRead = m_disk->read(data_block_number,data);
+	}
 
 	return NumberOfBytesRead;
 }

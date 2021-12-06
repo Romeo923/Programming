@@ -1,31 +1,11 @@
-﻿  Disk.cpp
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\Disk.cpp(58,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\Disk.cpp(58,10): message : consider using '%zu' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\Disk.cpp(59,10): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\Disk.cpp(59,10): message : consider using '%zu' in the format string
-  FileSystem.cpp
+﻿  FileSystem.cpp
 C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(127,49): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
 C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(235,52): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
 C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(238,23): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
 C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(242,54): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
 C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(259,51): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(309,6): warning C4101: 'data_block_number': unreferenced local variable
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(303,6): warning C4101: 'direct_pointer_index': unreferenced local variable
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(369,55): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(457,51): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  fs.cpp
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(70,30): warning C4101: 'e': unreferenced local variable
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(260,9): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(260,9): message : consider using '%zu' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(294,20): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(294,20): message : consider using '%zd' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(299,20): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(299,20): message : consider using '%zd' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(299,20): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(299,20): message : consider using '%zd' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(304,31): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(306,9): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(306,9): message : consider using '%zu' in the format string
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\fs.cpp(313,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(262,39): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(323,5): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(379,55): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\FileSystem.cpp(467,51): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   fs.vcxproj -> C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\cpeg308_503_Project_4_file_system\x64\Debug\fs.exe
