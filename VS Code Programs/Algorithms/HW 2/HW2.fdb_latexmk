@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1635875377 "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.tex" "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.pdf" "HW2" 1635875462
-  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.aux" 1635875378 686 4ce905362b6645b598ea182482e9aeed ""
-  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.tex" 1635875461 4185 86215c920e101020e94dc5cf10db78a6 ""
+["pdflatex"] 1638894098 "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.tex" "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.pdf" "HW2" 1638894100
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.aux" 1638894099 686 4ce905362b6645b598ea182482e9aeed ""
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.tex" 1638894098 4222 9d4169ad2cc14a43f20e56cd673c5a67 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -70,13 +70,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632432670 2724736 6a1aeec5b22172b001749bc38fa9ed3c ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "HW2.aux" 1635875378 686 4ce905362b6645b598ea182482e9aeed "pdflatex"
-  "HW2.out" 1635875378 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "HW2.tex" 1635875461 4185 86215c920e101020e94dc5cf10db78a6 ""
+  "HW2.aux" 1638894099 686 4ce905362b6645b598ea182482e9aeed "pdflatex"
+  "HW2.out" 1638894099 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "HW2.tex" 1638894098 4222 9d4169ad2cc14a43f20e56cd673c5a67 ""
   (generated)
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.pdf"
   "HW2.pdf"
   "HW2.out"
-  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.log"
-  "HW2.log"
   "HW2.aux"
-  "/Users/romeo/Desktop/Programming/VS Code Programs/Latex/Algorithms/HW 2/HW2.pdf"
+  "HW2.log"
+  "/Users/romeo/Desktop/Programming/VS Code Programs/Algorithms/HW 2/HW2.log"
