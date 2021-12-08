@@ -10,32 +10,50 @@
     \underline{Problem 1:}\\\\
     Find the upper bound of sum $\sum_{i=1}^{n}$ $\frac{1}{i}$ (Recall that ln0 is undefined)\\
     \\
-    \indent Answer\\
+    \indent $\int_{0}^{n} \frac{1}{x} \,dx $\\\\
+    \indent ln(x)$|_0^n$ = ln(n) - ln(0), However ln(0) is undefined\\\\
+    \indent Upper bound area from 0 $\to$ 1 = 1, so $\int_{0}^{1} \frac{1}{x} \,dx = 1$\\\\
+    \indent $\int_{0}^{n} \frac{1}{x} \,dx $ = $\int_{0}^{1} \frac{1}{x} \,dx $ + $\int_{1}^{n} \frac{1}{x} \,dx $\\\\
+    \indent\hspace{1.2cm} = 1 + $\int_{1}^{n} \frac{1}{x} \,dx $\\\\
+    \indent\hspace{1.2cm} = 1 + ln(x)$|_1^n$\\\\
+    \indent\hspace{1.2cm} = 1 + ln(n) - ln(1)\\\\
+    \indent\hspace{1.2cm} = 1 + ln(n) - 0\\\\
+    \indent Upper bound = 1 + ln(n)\\
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 2:}\\\\
     (a) Find the lower bound of sum $\sum_{i=1}^n$ $i^5$ using an integral\\
     \\
-    \indent Answer\\
+    \indent $\int_{0}^{n} x^5 \,dx = \frac{1}{6}x^6|_0^n = \frac{1}{6}n^6 - 0 = \frac{1}{6}n^6$\\
     \\
     (b) manually compute $\sum_{i=1}^n$ $i^5$ for n = 8, and compare to the lower bound formula in part (a)\\
     \\
-    \indent Answer\\
+    \indent $\sum_{i=1}^8$ $i^5$ = $1^5 + 2^5 + 3^5 + 4^5 + 5^5 + 6^5 + 7^5 + 8^5$\\
+    \indent\hspace{1.36cm}= 1 + 32 + 243 + 1024 + 3125 + 7776 + 16807 + 32768 = 61776\\
+    \indent\hspace{1.36cm}($n^5 = d_0d_1d_2...d_kn$ ? Ex: $\underline{3}^5 = 24\underline{3}$, $\underline{7}^5 = 1680\underline{7}$, etc.)\\\\
+    \indent Lower bound = $\frac{1}{6}8^6 = \frac{1}{6}262144 \approx 43691 < 61776$\\
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 3:}\\\\
     Find the limit $lim_{n\rightarrow\infty}$ $\frac{n2^n}{e^n}$ (recall ($2^n$)' = $2^n*ln2$)\\
     \\
-    \indent Answer\\
+    \indent $lim_{n\rightarrow\infty}$ $\frac{n2^n}{e^n}$ = $lim_{n\rightarrow\infty}$ $\frac{2^n + (2^nln2)n}{e^n}$ = $lim_{n\rightarrow\infty}$ $\frac{2^nln2 + (2^n + (2^nln2)n)ln2}{e^n}$\\\\
+    \indent L'Hopital's Rule does not simplify to $\frac{1}{n}$ or $\frac{1}{n}$, repeats infinately\\\\
+    \indent $\frac{2^n + (2^nln2)n}{e^n} = \frac{(1 + ln2)n2^n}{e^n} \approx \frac{n2^nln2}{e^n}$ \\\\
+    \indent $\frac{2^nln2 + (2^n + (2^nln2)n)ln2}{e^n} = \frac{(2^n + 2^n + (2^nln2)n)ln2}{e^n} = \frac{(2(2^n) + n2^nln2)ln2}{e^n} = \frac{(2 + nln2)2^nln2}{e^n} \approx \frac{(nln2)2^nln2}{e^n} = \frac{n2^n2ln2}{e^n}$\\\\
+    \indent The kth iteration of L'Hopital's Rule $\approx \frac{n2^nkln2}{e^n}$\\\\
+    \indent $\frac{n2^n}{e^n} > \frac{n2^nln2}{e^n} > \frac{n2^n2ln2}{e^n} > ... > \frac{n2^nkln2}{e^n}$, $\frac{n2^n}{e^n}$ decreases as L'Hopital iterations approach $\infty$\\\\
+    \indent Then $n2^n$ is less powerful than $e^n$, thus $lim_{n\rightarrow\infty}$ $\frac{n2^n}{e^n} = 0$, 
     \\
-    \rule{\textwidth}{0.5pt}\\
     \underline{Problem 4:}\\\\
     (a) Discuss why for f(n) = $n*lg(n^k)$ and g(n) = $n*lg(n^m)$ are $\Theta$ of each other\\
     \\
-    \indent Answer\\
+    \indent $nlg(n^k) = knlg(n)$, $nlg(n^m) = mnlg(n)$\\
+    \indent Since k and m are constants, then $knlg(n)$ and $mnlg(n)$ are proportional to each other\\
+    \indent Thus they are $\Theta$ of each other\\
     \\
     (b) Solve $lim_{n\rightarrow\infty}$ $\frac{f(n)}{g(n)}$\\
     \\
-    \indent Answer\\
+    \indent $lim_{n\rightarrow\infty}$ $\frac{f(n)}{g(n)}$ = $lim_{n\rightarrow\infty}$ $\frac{nlg(n^k)}{nlg(n^m)}$ = $lim_{n\rightarrow\infty}$ $\frac{knlg(n)}{mnlg(n)}$ = $lim_{n\rightarrow\infty}$ $\frac{k}{m}$ = $\frac{k}{m}$\\
     \\
 \end{document}
