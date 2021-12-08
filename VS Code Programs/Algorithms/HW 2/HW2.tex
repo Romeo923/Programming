@@ -35,7 +35,7 @@
     \\
     (d) Simplify your a(n) for large values of n.\\
     \\
-    \indent $\frac{(lg(n+1)-1)(n+1)+1}{n}$ $\approx$ $\frac{(lg(n))(n)}{n}$ $\approx$ lg(n) for large values of n\\
+    \indent $\frac{(lg(n+1)-1)(n+1)+1}{n}$ $\approx$ $\frac{(lg(n))(n)}{n}$ $\approx$ lg(n) for large values of n\\\\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 2:}\\\\
     Consider the algorithm below\\Precondition: n is a non-negative integer\\
@@ -77,39 +77,67 @@
     \\
     \indent $a_n$ = $r_n$\\
     \indent $r^n = 2r^{n-1} + 3r^{n-2}$\\
-    \indent $r^3 = 2r + 3$\\
-    \indent $r^3 - 2r - 3 = 0$\\
+    \indent $r^2 = 2r + 3$\\
+    \indent $r^2 - 2r - 3 = 0$\\
     \indent (r - 3)(r + 1) = 0\\
+    \indent r = 3, -1\\
+    \indent $a_n = \alpha(3^n) + \beta(-1^n)$\\
     \\
     (b) Find the Specific solution\\
     \\
-    \indent Answer\\
+    \indent $a_0 = 2 = \alpha(3^0) + \beta(-1^0)$\\
+    \indent\hspace{9.5pt} = $\alpha + \beta$\\
+    \indent $a_1 = 4 = \alpha(3^1) + \beta(-1^1)$\\
+    \indent\hspace{9.5pt} = $\alpha(3) + \beta(-1)$\\
     \\
-    (c) Use your closed form result to find $a_s$\\
+    \indent $2 = \alpha + \beta$\\
+    \indent $4 = 3\alpha - \beta$\\
+    \indent $6 = 4\alpha$, $\frac{3}{2} = \alpha$\\
     \\
-    \indent Answer\\
+    \indent $2 = (\frac{3}{2}) + \beta$\\
+    \indent $2 - \frac{3}{2} = \beta$, $\frac{1}{2} = \beta$\\
+    \\
+    \indent $a_n = \frac{3}{2}(3)^n + \frac{1}{2}(-1)^n$\\
+    \\
+    (c) Use your closed form result to find $a_5$\\
+    \\
+    \indent $a_5 = \frac{3}{2}(3)^5 + \frac{1}{2}(-1)^5$\\
+    \indent $a_5 = \frac{3}{2}(243) - \frac{1}{2}$\\
+    \indent $a_5 = 364.5 - 0.5 = 364$\\
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 4:}\\\\
     Two average complexities are given below.\\Variable p is probability value in the interval of [0.0, 1.0]. Variable n is the problem size. \\
     \\
-    $A_1 = p(n^2 + 1) + (1 + p)3n$\\
+    $A_1 = p(n^2 + 1) + (1 - p)3n$\\
     $A_2 = (1 - p) (3n^2 + n) + p(2n)$\\
-    \\
+    \\\\\\
     (a) Determine the condition for which $A_1$ is faster than $A_2$.\\
     \\
-    \indent Answer\\
+    \indent $A_1 < A_2$\\
+    \indent $p(n^2 + 1) + (1 - p)3n < (1 - p) (3n^2 + n) + p(2n)$\\
+    \indent $p(n^2) + p + 3n - 3pn < 3n^2 + n -3p(n^2) - pn + 2pn$\\
+    \indent $p(n^2) + p - 3pn + 3p(n^2) + pn - 2pn < 3n^2 + n - 3n$\\
+    \indent $4p(n^2) - 4pn + p < 3n^2 - 2n$\\
+    \indent $p(4(n^2) - 4n + 1) < 3n^2 - 2n$\\
+    \indent $p < \frac{3n^2 - 2n}{4n^2 - 4n + 1}$\\
     \\
     (b) Approximate the range of p values for which $A_1$ is faster than $A_2$ for large values of n.\\
     \\
-    \indent Answer\\
+    \indent $\lim_{p \to \infty} [\frac{3n^2 - 2n}{4n^2 - 4n + 1}] = \frac{3}{4}$\\
     \\
     (c) Given n=5,find the range of values for p where $A_2$ is faster than $A_1$.\\
     \\
-    \indent Answer\\
+    \indent $A_1 > A_2$\\
+    \indent $p > \frac{3n^2 - 2n}{4n^2 - 4n + 1}$\\\\
+    \indent n = 5\\\\
+    \indent $p > \frac{3(5^2) - 2(5)}{4(5^2) - 4(5) + 1}$\\
+    \indent $p > \frac{75 - 10}{100 - 20 + 1}$\\
+    \indent $p > \frac{65}{81}$\\
     \\
     (d) Can you determine the problem sizen where $A_1$ is always faster? Why or why not?\\
     \\
-    \indent Answer\\
+    \indent No because $A_1$ and $A_2$ both depend on p which varies independantly from the problem size n\\
+    \indent So given a fixed problem size n, $A_1$ can still be fast or slower than $A_2$ depending on the value of p\\
     \\
 \end{document}
