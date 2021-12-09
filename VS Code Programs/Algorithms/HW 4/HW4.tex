@@ -14,26 +14,36 @@
     \\
     (a) Use the Master Algorithm to find the $\Theta$ complexity of the lower bound $T_L$(n) = 4$T_L$($\frac{n}{8}$) + n\\
     \\
-    \indent Answer\\
+    \indent $f$(n) = n\\
+    \indent $n^{log_b a}$ = $n^{log_8 4}$ = $n^{0.666...}$\\
+    \indent $\Theta$(n)\\
     \\
     (b) Use the Master Algorithm to find the $\Theta$ complexity of the upper bound $T_U$(n) = 4$T_U$($\frac{n}{3}$) + n\\
     \\
-    \indent Answer\\
+    \indent $f$(n) = n\\
+    \indent $n^{log_b a}$ = $n^{log_3 4}$ = $n^{1.26}$\\
+    \indent $\Theta$($n^{1.26}$)\\
     \\
     (c) Do the upper and lower bound $\Theta$ complexities agree? If f(n) = $n^2$, would your lower and upper bound $\Theta$ complexities agree?\\
     \\
-    \indent Answer\\
+    \indent No, the upper and lower bound complexities do not agree\\
+    \indent If $f$(n) = $n^2$, then the upper and lower bound complexities would agree, they would be $\Theta$($n^2$)\\
     \\
-    (d) Using only the results from (a) and (b), fins the tightest complexity values (Use Big O, little o, Big $\Omega$, or little $\omega$) based on each result (a) and (b).\\
+    (d) Using only the results from (a) and (b), find the tightest complexity values (Use Big O, little o, Big $\Omega$, or little $\omega$) based on each result (a) and (b).\\
     \\
-    \indent Answer\\
+    \indent O($n^{1.26}$)\\
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 2:}\\\\
     Use a recurrence tree to find the $\Theta$ complexity of T(n) = 2T($\frac{n}{8}$) + 2T($\frac{n}{3}$) + n\\
     $[$Hint: Look for the geometric series, as we did in class lecture and class notes$]$\\
     \\
-    \indent Answer\\
+    \indent\indent\hspace{3.2cm}n\hspace{4.5cm}n\\
+    \indent\hspace{24pt}/\hspace{52pt}/\hspace{45pt}$\backslash$\hspace{40pt}$\backslash$\\
+    \indent\hspace{21pt}$\frac{n}{8}$\hspace{49pt}$\frac{n}{8}$\hspace{48pt}$\frac{n}{3}$\hspace{39pt}$\frac{n}{3}$\hspace{50pt}$\frac{11n}{12}$\\
+    \indent\hspace{1pt} / \hspace{1pt} / \hspace{1pt}$\backslash$ \hspace{1pt} $\backslash$ \hspace{13pt}/ \hspace{1pt} / \hspace{1pt}$\backslash$ \hspace{1pt} $\backslash$ \hspace{13pt}/ \hspace{1pt} / $\backslash$ $\backslash$ \hspace{5pt} / \hspace{2pt} / $\backslash$ $\backslash$ \\
+    \indent $\frac{n}{64}$ $\frac{n}{64}$ $\frac{n}{24}$ $\frac{n}{24}$ $\frac{n}{64}$ $\frac{n}{64}$ $\frac{n}{24}$ $\frac{n}{24}$ $\frac{n}{24}$ $\frac{n}{24}$ $\frac{n}{9}$ $\frac{n}{9}$ $\frac{n}{24}$ $\frac{n}{24}$ $\frac{n}{9}$ $\frac{n}{9}$\hspace{32pt}$\frac{11^2n}{12^2}$\\\\
+    \indent r = $\frac{11}{12} > 1$, $\Theta$(n)\\
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 3:}\\\\
@@ -41,7 +51,8 @@
     \\
     (a) Explain why the Master Algorithm cannot be applied to solve its complexity.\\
     \\
-    \indent Answer\\
+    \indent Because it is not in the form of T(n) = aT($\frac{n}{b}$) + $f$(n),\\
+    \indent where a is the num of splits and b how each branch is growing\\
     \\
     (b) Draw a Recurrence Tree for Towers of Hannoi, to find its complexity.\\
     \\
@@ -49,9 +60,14 @@
     \\
     \rule{\textwidth}{0.5pt}\\
     \underline{Problem 4:}\\\\
-    In this problem, we have a recurrence. $Algorithm_1$ calls $Algorithm_2$ and $Algorithm_2$ calls $Algorithm_1$, and so forth until the problem is solved. Use a recurrence Tree to find the complexity $T_1$(n) of $Algorithm_1$.\\
+    In this problem, we have a recurrence. Algorithm$_1$ calls Algorithm$_2$ and Algorithm$_2$ calls Algorithm$_1$, and so forth until the problem is solved. Use a recurrence Tree to find the complexity $T_1$(n) of Algorithm$_1$.\\
     \indent $T_1$(n) = 2$T_2$($\frac{n}{2}$) + n \hspace{5cm} $T_2$(n) = 2$T_1$($\frac{n}{2}$) + $n^2$\\
     \\
-    \indent Answer\\
+    \indent\indent\hspace{3.2cm}n\hspace{4.5cm}n\\
+    \indent\hspace{80pt}/\hspace{45pt}$\backslash$\\
+    \indent\hspace{77pt}$\frac{n}{2}$\hspace{47pt}$\frac{n}{2}$\hspace{101pt}n\\
+    \indent\hspace{70pt} / $\backslash$ \hspace{35pt}\hspace{1pt} / $\backslash$\\
+    \indent\hspace{68pt}$\frac{n^2}{2^2}$ $\frac{n^2}{2^2}$\hspace{30pt}$\frac{n}{2^2}$\hspace{6pt}$\frac{n}{2^2}$\hspace{89pt}n\\\\
+    \indent $T_1$(n) = $\Theta$(n)
     \\
 \end{document}

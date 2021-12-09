@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1638965098 "c:/Users/Romeo/Desktop/Coding/Programming/VS Code Programs/Algorithms/HW 3/HW3.tex" "HW3.pdf" "HW3" 1638965099
+["pdflatex"] 1639046506 "c:/Users/Romeo/Desktop/Coding/Programming/VS Code Programs/Algorithms/HW 3/HW3.tex" "HW3.pdf" "HW3" 1639046507
   "C:/Users/Romeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1637782639 9769173 0dd5e7e0947e9803c56001c295b1c6d3 ""
   "C:/Users/Romeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1637782622 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -63,12 +63,12 @@
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/Romeo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "HW3.aux" 1638965099 686 4ce905362b6645b598ea182482e9aeed "pdflatex"
-  "HW3.out" 1638965098 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "HW3.tex" 1638965097 3634 c1a1048a855b23f58b97092f5218dd91 ""
-  "c:/Users/Romeo/Desktop/Coding/Programming/VS Code Programs/Algorithms/HW 3/HW3.tex" 1638965097 3634 c1a1048a855b23f58b97092f5218dd91 ""
+  "HW3.aux" 1639046507 686 4ce905362b6645b598ea182482e9aeed "pdflatex"
+  "HW3.out" 1639046507 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "HW3.tex" 1639046505 3040 30930175f50371a59633341df1d3a460 ""
+  "c:/Users/Romeo/Desktop/Coding/Programming/VS Code Programs/Algorithms/HW 3/HW3.tex" 1639046505 3040 30930175f50371a59633341df1d3a460 ""
   (generated)
+  "HW3.aux"
   "HW3.out"
   "HW3.pdf"
-  "HW3.aux"
   "HW3.log"

@@ -39,11 +39,8 @@
     \\
     \indent $lim_{n\rightarrow\infty}$ $\frac{n2^n}{e^n}$ = $lim_{n\rightarrow\infty}$ $\frac{2^n + (2^nln2)n}{e^n}$ = $lim_{n\rightarrow\infty}$ $\frac{2^nln2 + (2^n + (2^nln2)n)ln2}{e^n}$\\\\
     \indent L'Hopital's Rule does not simplify to $\frac{1}{n}$ or $\frac{1}{n}$, repeats infinately\\\\
-    \indent $\frac{2^n + (2^nln2)n}{e^n} = \frac{(1 + ln2)n2^n}{e^n} \approx \frac{n2^nln2}{e^n}$ \\\\
-    \indent $\frac{2^nln2 + (2^n + (2^nln2)n)ln2}{e^n} = \frac{(2^n + 2^n + (2^nln2)n)ln2}{e^n} = \frac{(2(2^n) + n2^nln2)ln2}{e^n} = \frac{(2 + nln2)2^nln2}{e^n} \approx \frac{(nln2)2^nln2}{e^n} = \frac{n2^n2ln2}{e^n}$\\\\
-    \indent The kth iteration of L'Hopital's Rule $\approx \frac{n2^nkln2}{e^n}$\\\\
-    \indent $\frac{n2^n}{e^n} > \frac{n2^nln2}{e^n} > \frac{n2^n2ln2}{e^n} > ... > \frac{n2^nkln2}{e^n}$, $\frac{n2^n}{e^n}$ decreases as L'Hopital iterations approach $\infty$\\\\
-    \indent Then $n2^n$ is less powerful than $e^n$, thus $lim_{n\rightarrow\infty}$ $\frac{n2^n}{e^n} = 0$, 
+    \indent $\frac{n2^n}{e^n}$ = $n(\frac{2}{e})^n$ \\\\
+    \indent Usure where to go from here :(\\\\\\\\\\\\
     \\
     \underline{Problem 4:}\\\\
     (a) Discuss why for f(n) = $n*lg(n^k)$ and g(n) = $n*lg(n^m)$ are $\Theta$ of each other\\
