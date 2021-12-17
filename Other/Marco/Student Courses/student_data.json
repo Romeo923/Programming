@@ -5,20 +5,18 @@
       "ID": 1072300,
       "courses": [
         {
-          "name": "Real Analysis",
-          "ID": "MATH-500",
+          "ID": "Real Analysis MATH-500",
           "semester": "Spring",
           "year": 1,
           "credits": 3,
-          "registered": true
+          "requirements": []
         },
         {
-          "name": "Nuclear Physics",
-          "ID": "PHYS-900",
+          "ID": "Nuclear Physics PHYS-900",
           "semester": "Fall",
           "year": 3,
           "credits": 4,
-          "registered": false
+          "requirements": []
         }
       ]
     },
@@ -27,20 +25,18 @@
       "ID": 123456789,
       "courses": [
         {
-          "name": "Thermodynamics",
-          "ID": "PHYS-700",
+          "ID": "Thermodynamics PHYS-700",
           "semester": "Spring",
           "year": 1,
           "credits": 3,
-          "registered": true
+          "requirements": []
         },
         {
-          "name": "Intro to Engineering",
-          "ID": "ENGR-100",
+          "ID": "Intro to Engineering ENGR-100",
           "semester": "Spring",
           "year": 2,
           "credits": 3,
-          "registered": true
+          "requirements": []
         }
       ]
     }

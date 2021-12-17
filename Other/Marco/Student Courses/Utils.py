@@ -1,26 +1,24 @@
 import json
 from tkinter import *
-from tkmacosx import *
+# from tkmacosx import *
 from tkinter import ttk
 
 class Course:
 
-    def __init__(self,name,id,credits,semester,year,registered):
-        self.name = name
+    def __init__(self,id,credits,requirements,semester,year):
         self.ID = id
         self.credits = credits
+        self.requirements = requirements
         self.semester = semester
         self.year = year
-        self.registered = registered if type(registered) == bool else True if registered.lower() == 'true' else False
 
     def __str__(self):
         return f"""
-        Course Name:   {self.name}
         Course Number: {self.ID}
         Credits:       {self.credits}
+        Requirements:  {self.requirements}
         Semester:      {self.semester}
         Year:          {self.year}
-        Registered:    {self.registered}s
         """
 
 class Student:
@@ -28,7 +26,7 @@ class Student:
     def __init__(self,name,id,courses):
         self.name = name
         self.ID = id
-        self.courses = [Course(name=data["name"],id=data["ID"],credits=data["credits"],semester=data["semester"],year=data["year"],registered=data["registered"]) for data in courses]
+        self.courses = [Course(id=data["ID"],credits=data["credits"],requirements=data["requirements"],semester=data["semester"],year=data["year"]) for data in courses]
 
     def adddCourse(self,course):
         self.courses.append(course)
@@ -73,12 +71,11 @@ def write(student_list, file_path):
         courses = []
         for course in student.courses:
             courses.append({
-                "name":course.name,
                 "ID":course.ID,
                 "semester":course.semester,
                 "year":course.year,
                 "credits":course.credits,
-                "registered":course.registered
+                "requirements":course.requirements
             })
 
         students.append({
@@ -137,20 +134,17 @@ def profile(student,state):
 
     tree = generateTree(student=student,state=state)
 
-    Label(state.frame,text="Registered Status").grid(column=0,row=3)
-    registered = Entry(state.frame)
-    registered.grid(column=0,row=4)
-    Label(state.frame,text="Course Name").grid(column=1,row=3)
-    cn = Entry(state.frame)
-    cn.grid(column=1,row=4)
-    Label(state.frame,text="Course No").grid(column=2,row=3)
+    Label(state.frame,text="Course").grid(column=1,row=3)
     cid = Entry(state.frame)
-    cid.grid(column=2,row=4)
+    cid.grid(column=1,row=4)
+    Label(state.frame,text="Requirements").grid(column=2,row=3)
+    req = Entry(state.frame)
+    req.grid(column=2,row=4)
     Label(state.frame,text="Credits").grid(column=3,row=3)
     credits = Entry(state.frame)
     credits.grid(column=3,row=4)
     
-    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state,course=Course(name=cn.get(),id=cid.get(),semester='Fall',credits=int(credits.get()),year=1,registered=registered.get()),tree=tree)).grid(column=0,row=5)
+    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state,course=Course(id=cid.get(),semester='Fall',credits=int(credits.get()),requirements=req.get().split(','),year=1),tree=tree)).grid(column=0,row=5)
     Button(state.frame,text="Save",command=lambda s=student,st = state : save(student=s,state=st,name=name.get(),id=int(id.get()))).grid(column=1,row=5)
     Button(state.frame,text="Delete Student",command=lambda s=student, st = state: deleteStudent(student=s, state=st)).grid(column=2,row=5)
     Button(state.frame,text="Home",command=lambda st = state: home(state=st)).grid(column=3,row=5)
@@ -158,21 +152,19 @@ def profile(student,state):
 
 def generateTree(student,state):
     tree = ttk.Treeview(state.frame)
-    tree['columns'] = ('Registered','Course Name', 'Course No.','Credits')
+    tree['columns'] = ('Course','Requirements','Credits')
     tree.column('#0',width=0,stretch=NO)
-    tree.column('Registered',width=120,anchor=CENTER)
-    tree.column('Course Name',width=120,anchor=CENTER)
-    tree.column('Course No.',width=120,anchor=CENTER)
+    tree.column('Course',width=120,anchor=CENTER)
+    tree.column('Requirements',width=120,anchor=CENTER)
     tree.column('Credits',width=120,anchor=CENTER)
-    tree.heading('Registered',text="Registered")
-    tree.heading('Course Name',text="Course Name")
-    tree.heading('Course No.',text="Course No.")
+    tree.heading('Requirements',text="Requirements")
+    tree.heading('Course',text="Course")
     tree.heading('Credits',text="Credits")
 
     for i, course in enumerate(student.courses):
-        tree.insert(parent='',index='end',iid=i,values=(course.registered,course.name,course.ID,course.credits))
+        tree.insert(parent='',index='end',iid=i,values=(course.ID,course.requirements,course.credits))
 
-    tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','','Total Credits:',student.totalCreds()))
+    tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','Total Credits:',student.totalCreds()))
     tree.tag_configure('total',foreground='white',background='black')
     tree.grid(columnspan=4,row=2)
 
