@@ -86,23 +86,22 @@ OPCODE fetch()
 		//is_PageLoaded, swapPage_LRU, queue->AddToHead, queue->MoveToHead, 
 		//findEmptyFrame, update_page_table, load_LogicalToPhysical
 		
-		if (!(is_PageLoaded(page, &frame_index))) {
+		if (is_PageLoaded(page, &frame_index)) {    //page already in physical memory
+			//update queue for LRU
+			queue->MoveToHead(page);
+		}
+		else {  //page not in physical memory
 			fault_count++;
 			frame_index = findEmptyFrame();
-
-			if (frame_index == NOT_FOUND) {
-
-				
+			if (frame_index == NOT_FOUND) {   //no free spot
 				frame_index = swapPage_LRU(page);
-			}else{
+			}
+			else {    //free spot exist
 				queue->AddToHead(page, frame_index);
-
 			}
 
-			load_LogicalToPhysical(page, frame_index);
 			update_page_table(page, frame_index);
-		}else{
-			queue->MoveToHead(page);
+			load_LogicalToPhysical(page, frame_index);
 		}
 		
 	}

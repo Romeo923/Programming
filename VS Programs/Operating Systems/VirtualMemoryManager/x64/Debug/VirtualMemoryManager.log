@@ -1,3 +1,3 @@
 ﻿  VirtualMemoryManager.cpp
-C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\VirtualMemoryManager\VirtualMemoryManager.cpp(156,47): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\VirtualMemoryManager\VirtualMemoryManager.cpp(159,47): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   VirtualMemoryManager.vcxproj -> C:\Users\Romeo\Desktop\Coding\Programming\VS Programs\Operating Systems\VirtualMemoryManager\x64\Debug\VirtualMemoryManager.exe
