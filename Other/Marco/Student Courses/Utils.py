@@ -194,7 +194,14 @@ class Form:
         
         self.frame.destroy()
         self.frame = Frame(self.root)
-        data_frame = Frame(self.frame,borderwidth=1,relief='solid')
+        canvas = Canvas(self.frame,width=800,height=1200,scrollregion=(0,0,0,300000))
+
+        scrollbar = Scrollbar(self.frame,orient=VERTICAL)
+        scrollbar.config(command=canvas.yview)
+        canvas.config(yscrollcommand=scrollbar.set)
+        
+
+        data_frame = Frame(canvas,borderwidth=1,relief='solid')
 
         Label(data_frame,text="Student Name: ").grid(column=1,row=0)
         name = Entry(data_frame)
@@ -206,26 +213,28 @@ class Form:
         id.insert(0,student.ID)
         id.grid(column=2,row=1)
 
-        course_tables, course_frame = self.generateAllCourseTables(student=student)
+        course_tables, course_frame = self.generateAllCourseTables(student=student,frame=canvas)
 
-        button_frame = Frame(self.frame)
+        button_frame = Frame(canvas)
         
         Button(button_frame,text="Home",command=self.home).grid(column=0,row=0)
         Button(button_frame,text="Save",command=lambda s=student: self.save(student=s,name=name.get(),id=int(id.get()),course_tables=course_tables)).grid(column=1,row=0)
         Button(button_frame,text="Delete Student",command=lambda s=student: self.deleteStudent(student=s)).grid(column=2,row=0)
 
+        scrollbar.pack(side=RIGHT,fill=Y)
+        canvas.pack(expand=True)
         data_frame.grid(columnspan=4,row=0,pady=(20,0),padx=(10,5))
         course_frame.grid(columnspan=4,row=1,pady=(20,20),padx=(10,5))
-        StatBar(self.frame,student.courses,borderwidth=1,relief="solid").grid(columnspan=4,row=2,pady=(5,5),padx=(10,5))
+        StatBar(canvas,student.courses,borderwidth=1,relief="solid").grid(columnspan=4,row=2,pady=(5,5),padx=(10,5))
         button_frame.grid(columnspan=4,row=3,pady=(5,5),padx=(10,5))
 
         self.frame.pack()
 
-    def generateAllCourseTables(self,student):
+    def generateAllCourseTables(self,student,frame):
         semesters = ["Fall","Spring"]
         years = 4
         course_tables =[]
-        course_frame = Frame(self.frame)
+        course_frame = Frame(frame)
 
         for sem_index,semester in enumerate(semesters):
             Label(course_frame,text=semester,font=("Ariel",15)).grid(column=sem_index,row=0)
