@@ -32,7 +32,7 @@ class Student:
         self.courses.append(course)
 
     def getCourses(self,semester,year):
-        return (course for course in self.courses if (course.semester == semester and course.year == year))
+        return [course for course in self.courses if (course.semester == semester and course.year == year)]
 
     def totalCreds(self):
         return sum([course.credits for course in self.courses])
@@ -50,148 +50,177 @@ class Student:
 
         return student_str
 
-class State:
+class StatBar(Frame):
 
-    def __init__(self,file_path,root,frame,student_list):
+    def __init__(self,parent,course_list):
+        Frame.__init__(self,parent)
+
+        self.reqs = ["SS","HU"]
+
+        for i, req in enumerate(self.reqs):
+            Label(self,text=f'{req} Credits').grid(column=i,row=0)
+            creds = sum([course.credits for course in course_list if req in course.requirements])
+            Label(self,text=f'{creds}').grid(column=i,row=1)
+        Label(self,text='Total Credits').grid(column=len(self.reqs),row=0)
+        creds = sum([course.credits for course in course_list])
+        Label(self,text=f'{creds}').grid(column=len(self.reqs),row=1)
+
+class Table(Frame):
+
+    def __init__(self, parent, course_list, semester, year):
+        Frame.__init__(self,parent)
+
+        self.course_list = course_list
+        self.semester = semester
+        self.year = year
+        self.course_data = []
+
+        Label(self,text='Course').grid(column=0,row=0)
+        Label(self,text='Reqs').grid(column=1,row=0)
+        Label(self,text='Credits').grid(column=2,row=0)
+
+        for i, course in enumerate(self.course_list):
+            
+            name = Entry(self)
+            name.insert(0,course.ID)
+            name.grid(column=0,row=i+1)
+
+            reqs = Entry(self)
+            reqs.insert(0,course.requirements)
+            reqs.grid(column=1,row=i+1)
+
+            creds = Entry(self)
+            creds.insert(0,course.credits)
+            creds.grid(column=2,row=i+1)
+
+            self.course_data.append((name,reqs,creds))
+
+        for i in range(len(course_list),8):
+            name = Entry(self)
+            name.grid(column=0,row=i+1)
+
+            reqs = Entry(self)
+            reqs.grid(column=1,row=i+1)
+
+            creds = Entry(self)
+            creds.grid(column=2,row=i+1)
+
+            self.course_data.append((name,reqs,creds))
+
+        StatBar(self,course_list).grid(columnspan=3,row=9)
+
+    def updateCourses(self):
+        
+        return [Course(id=name.get(),credits=int(creds.get()),requirements=reqs.get().replace(',',' ').split(),semester=self.semester,year=self.year) for name, reqs, creds in self.course_data if not (name.get() == '' or creds.get() == '')]
+
+class Form:
+
+    def __init__(self,file_path):
+        self.root = Tk()
+        self.root.geometry("800x750")
+        self.frame = Frame(self.root)
+
         self.file_path = file_path
-        self.root = root
-        self.frame = frame
-        self.student_list = student_list
 
-def load(file_path):
-
-    with open(file_path) as file:
-        students = json.load(file)["Students"]
+        self.student_list = None
     
-    return students
+        self.home()
+        self.root.mainloop()
 
-def write(student_list, file_path):
-    students = []
-    for student in student_list:
-        courses = []
-        for course in student.courses:
-            courses.append({
-                "ID":course.ID,
-                "semester":course.semester,
-                "year":course.year,
-                "credits":course.credits,
-                "requirements":course.requirements
+    def load(self):
+
+        with open(self.file_path) as file:
+            students = json.load(file)["Students"]
+        
+        return students
+
+    def write(self):
+        students = []
+        for student in self.student_list:
+            courses = []
+            for course in student.courses:
+                courses.append({
+                    "ID":course.ID,
+                    "semester":course.semester,
+                    "year":course.year,
+                    "credits":course.credits,
+                    "requirements":course.requirements
+                })
+
+            students.append({
+                "name":student.name,
+                "ID":student.ID,
+                "courses":courses
             })
 
-        students.append({
-            "name":student.name,
-            "ID":student.ID,
-            "courses":courses
-        })
+        with open(self.file_path,'w') as file:
+            json.dump({"Students":students},file,indent=2)
 
-    with open(file_path,'w') as file:
-        json.dump({"Students":students},file,indent=2)
+    def save(self, student, name, id, course_tables):
 
-def save(student,state,name,id):
+        student.name = name
+        student.ID = id
+        courses = []
+        for table in course_tables:
+            courses += table.updateCourses()
+        student.courses = courses
 
-    student.name = name
-    student.ID = id
+        if student.ID == 0:
+            return
 
-    if student.ID == 0:
-        return
+        add = False
+        for i, s in enumerate(self.student_list):
+            if student.ID == s.ID:
+                self.student_list[i] = student
+                add = True
+        if add is False:
+            self.student_list.append(student)
 
-    add = False
-    for i, s in enumerate(state.student_list):
-        if student.ID == s.ID:
-            state.student_list[i] = student
-            add = True
-    if add is False:
-        state.student_list.append(student)
+        self.write()
+        self.profile(student=student)
 
-    write(student_list=state.student_list,file_path=state.file_path)
-    profile(student=student,state=state)
+    def home(self):
+        
+        self.updateStudentDir()
+        self.frame.destroy()
+        self.frame = Frame(self.root)
+        Label(self.frame,text="Students\n").grid(column=0,row=0)
+        for i, student in enumerate(self.student_list):
+            Button(self.frame,text=student.name,command=lambda s=student: self.profile(student=s)).grid(column=0,row=(i+1))
+        Button(self.frame,text="Add Student",command=lambda : self.profile(student=Student("",0,courses=[]))).grid(column=0)
+        self.frame.pack()
+        
+    def profile(self, student):
+        
+        self.frame.destroy()
+        self.frame = Frame(self.root)
 
-def home(state):
-    
-    updateStudentDir(state)
-    state.frame.destroy()
-    state.frame = Frame(state.root)
-    Label(state.frame,text="Students\n").grid(column=0,row=0)
-    for i, student in enumerate(state.student_list):
-        Button(state.frame,text=student.name,command=lambda s=student,st = state: profile(student=s,state=st)).grid(column=0,row=(i+1))
-    Button(state.frame,text="Add Student",command=lambda st = state: profile(student=Student("",0,courses=[]),state=st)).grid(column=0)
-    state.frame.pack()
-    
-def profile(student,state):
-    
-    state.frame.destroy()
-    state.frame = Frame(state.root)
+        Label(self.frame,text="Student Name: ").grid(column=1,row=0)
+        name = Entry(self.frame)
+        name.insert(0,student.name)
+        name.grid(column=2,row=0)
 
-    Label(state.frame,text="Student Name: ").grid(column=1,row=0)
-    name = Entry(state.frame)
-    name.insert(0,student.name)
-    name.grid(column=2,row=0)
+        Label(self.frame,text="Student ID: ").grid(column=1,row=1)
+        id = Entry(self.frame)
+        id.insert(0,student.ID)
+        id.grid(column=2,row=1)
 
-    Label(state.frame,text="Student ID: ").grid(column=1,row=1)
-    id = Entry(state.frame)
-    id.insert(0,student.ID)
-    id.grid(column=2,row=1)
+        # tree = self.generateTree(student=student)
+        tree = Table(parent=self.frame,course_list=student.courses,semester='Fall',year=1)
+        tree.grid(columnspan=3,row=2)
+        
+        Button(self.frame,text="Save",command=lambda s=student: self.save(student=s,name=name.get(),id=int(id.get()),course_tables=[tree])).grid(column=0,row=5)
+        Button(self.frame,text="Delete Student",command=lambda s=student: self.deleteStudent(student=s)).grid(column=1,row=5)
+        Button(self.frame,text="Home",command=self.home).grid(column=2,row=5)
+        self.frame.pack()
 
-    tree = generateTree(student=student,state=state)
+    def deleteStudent(self, student):
+        for i, s in enumerate(self.student_list):
+            if s.ID == student.ID:
+                del self.student_list[i]
+        self.write()
+        self.home()
 
-    Label(state.frame,text="Course").grid(column=1,row=3)
-    cid = Entry(state.frame)
-    cid.grid(column=1,row=4)
-    Label(state.frame,text="Requirements").grid(column=2,row=3)
-    req = Entry(state.frame)
-    req.grid(column=2,row=4)
-    Label(state.frame,text="Credits").grid(column=3,row=3)
-    credits = Entry(state.frame)
-    credits.grid(column=3,row=4)
-    
-    Button(state.frame,text="Add Course",command=lambda : addCourse(student=student,state=state,course=Course(id=cid.get(),semester='Fall',credits=int(credits.get()),requirements=req.get().split(','),year=1),tree=tree)).grid(column=0,row=5)
-    Button(state.frame,text="Save",command=lambda s=student,st = state : save(student=s,state=st,name=name.get(),id=int(id.get()))).grid(column=1,row=5)
-    Button(state.frame,text="Delete Student",command=lambda s=student, st = state: deleteStudent(student=s, state=st)).grid(column=2,row=5)
-    Button(state.frame,text="Home",command=lambda st = state: home(state=st)).grid(column=3,row=5)
-    state.frame.pack()
-
-def generateTree(student,state):
-    tree = ttk.Treeview(state.frame)
-    tree['columns'] = ('Course','Requirements','Credits')
-    tree.column('#0',width=0,stretch=NO)
-    tree.column('Course',width=120,anchor=CENTER)
-    tree.column('Requirements',width=120,anchor=CENTER)
-    tree.column('Credits',width=120,anchor=CENTER)
-    tree.heading('Requirements',text="Requirements")
-    tree.heading('Course',text="Course")
-    tree.heading('Credits',text="Credits")
-
-    for i, course in enumerate(student.courses):
-        tree.insert(parent='',index='end',iid=i,values=(course.ID,course.requirements,course.credits))
-
-    tree.insert(parent='',index='end',iid=999,tags=('total',),values=('','Total Credits:',student.totalCreds()))
-    tree.tag_configure('total',foreground='white',background='black')
-    tree.grid(columnspan=4,row=2)
-
-    return tree
-
-def addCourse(student,state,course,tree):
-        student.courses.append(course)
-        profile(student=student,state=state)
-
-def createFrame(file_path):
-
-    root = Tk()
-    root.geometry("800x750")
-    frame = Frame(root)
-
-    state = State(file_path=file_path,root=root,student_list=None,frame=frame)
-    
-    home(state)
-    root.mainloop()
-
-def deleteStudent(student,state):
-    for i, s in enumerate(state.student_list):
-        if s.ID == student.ID:
-            del state.student_list[i]
-    write(student_list=state.student_list,file_path=state.file_path)
-    home(state=state)
-
-def updateStudentDir(state):
-    students = load(state.file_path)
-    state.student_list = [Student(name=data["name"],id=data["ID"],courses=data["courses"]) for data in students]
+    def updateStudentDir(self):
+        students = self.load()
+        self.student_list = [Student(name=data["name"],id=data["ID"],courses=data["courses"]) for data in students]

@@ -39,6 +39,30 @@
           "requirements": []
         }
       ]
+    },
+    {
+      "name": "Hannes Anders",
+      "ID": 789456,
+      "courses": [
+        {
+          "ID": "Math 217",
+          "semester": "Fall",
+          "year": 1,
+          "credits": 3,
+          "requirements": [
+            "SS"
+          ]
+        },
+        {
+          "ID": "Phys 207",
+          "semester": "Fall",
+          "year": 1,
+          "credits": 3,
+          "requirements": [
+            "HU"
+          ]
+        }
+      ]
     }
   ]
 }
