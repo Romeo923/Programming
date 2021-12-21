@@ -52,8 +52,8 @@ class Student:
 
 class StatBar(Frame):
 
-    def __init__(self,parent,course_list):
-        Frame.__init__(self,parent)
+    def __init__(self,parent,course_list,borderwidth=0,relief="solid"):
+        Frame.__init__(self,parent,borderwidth=borderwidth,relief=relief)
 
         self.reqs = ["SS","HU"]
 
@@ -67,8 +67,8 @@ class StatBar(Frame):
 
 class Table(Frame):
 
-    def __init__(self, parent, course_list, semester, year):
-        Frame.__init__(self,parent)
+    def __init__(self, parent, course_list, semester, year,borderwidth,relief):
+        Frame.__init__(self,parent,borderwidth=borderwidth,relief=relief)
 
         self.course_list = course_list
         self.semester = semester
@@ -81,28 +81,28 @@ class Table(Frame):
 
         for i, course in enumerate(self.course_list):
             
-            name = Entry(self)
+            name = Entry(self,width=40)
             name.insert(0,course.ID)
             name.grid(column=0,row=i+1)
 
-            reqs = Entry(self)
+            reqs = Entry(self,width=10)
             reqs.insert(0,course.requirements)
             reqs.grid(column=1,row=i+1)
 
-            creds = Entry(self)
+            creds = Entry(self,width=6)
             creds.insert(0,course.credits)
             creds.grid(column=2,row=i+1)
 
             self.course_data.append((name,reqs,creds))
 
         for i in range(len(course_list),8):
-            name = Entry(self)
+            name = Entry(self,width=40)
             name.grid(column=0,row=i+1)
 
-            reqs = Entry(self)
+            reqs = Entry(self,width=10)
             reqs.grid(column=1,row=i+1)
 
-            creds = Entry(self)
+            creds = Entry(self,width=6)
             creds.grid(column=2,row=i+1)
 
             self.course_data.append((name,reqs,creds))
@@ -117,7 +117,7 @@ class Form:
 
     def __init__(self,file_path):
         self.root = Tk()
-        self.root.geometry("800x750")
+        self.root.geometry("800x1200")
         self.frame = Frame(self.root)
 
         self.file_path = file_path
@@ -194,25 +194,47 @@ class Form:
         
         self.frame.destroy()
         self.frame = Frame(self.root)
+        data_frame = Frame(self.frame,borderwidth=1,relief='solid')
 
-        Label(self.frame,text="Student Name: ").grid(column=1,row=0)
-        name = Entry(self.frame)
+        Label(data_frame,text="Student Name: ").grid(column=1,row=0)
+        name = Entry(data_frame)
         name.insert(0,student.name)
         name.grid(column=2,row=0)
 
-        Label(self.frame,text="Student ID: ").grid(column=1,row=1)
-        id = Entry(self.frame)
+        Label(data_frame,text="Student ID: ").grid(column=1,row=1)
+        id = Entry(data_frame)
         id.insert(0,student.ID)
         id.grid(column=2,row=1)
 
-        # tree = self.generateTree(student=student)
-        tree = Table(parent=self.frame,course_list=student.courses,semester='Fall',year=1)
-        tree.grid(columnspan=3,row=2)
+        course_tables, course_frame = self.generateAllCourseTables(student=student)
+
+        button_frame = Frame(self.frame)
         
-        Button(self.frame,text="Save",command=lambda s=student: self.save(student=s,name=name.get(),id=int(id.get()),course_tables=[tree])).grid(column=0,row=5)
-        Button(self.frame,text="Delete Student",command=lambda s=student: self.deleteStudent(student=s)).grid(column=1,row=5)
-        Button(self.frame,text="Home",command=self.home).grid(column=2,row=5)
+        Button(button_frame,text="Home",command=self.home).grid(column=0,row=0)
+        Button(button_frame,text="Save",command=lambda s=student: self.save(student=s,name=name.get(),id=int(id.get()),course_tables=course_tables)).grid(column=1,row=0)
+        Button(button_frame,text="Delete Student",command=lambda s=student: self.deleteStudent(student=s)).grid(column=2,row=0)
+
+        data_frame.grid(columnspan=4,row=0,pady=(20,0),padx=(10,5))
+        course_frame.grid(columnspan=4,row=1,pady=(20,20),padx=(10,5))
+        StatBar(self.frame,student.courses,borderwidth=1,relief="solid").grid(columnspan=4,row=2,pady=(5,5),padx=(10,5))
+        button_frame.grid(columnspan=4,row=3,pady=(5,5),padx=(10,5))
+
         self.frame.pack()
+
+    def generateAllCourseTables(self,student):
+        semesters = ["Fall","Spring"]
+        years = 4
+        course_tables =[]
+        course_frame = Frame(self.frame)
+
+        for sem_index,semester in enumerate(semesters):
+            Label(course_frame,text=semester,font=("Ariel",15)).grid(column=sem_index,row=0)
+            for year in range(1,years+1):
+                table = Table(parent=course_frame,course_list=student.getCourses(semester,year),semester=semester,year=year,borderwidth=1,relief='solid')
+                course_tables.append(table)
+                table.grid(column=sem_index,row = year,padx=(0,25),pady=(5,5))
+
+        return course_tables, course_frame
 
     def deleteStudent(self, student):
         for i, s in enumerate(self.student_list):

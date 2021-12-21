@@ -58,6 +58,31 @@
           "semester": "Fall",
           "year": 1,
           "credits": 3,
+          "requirements": []
+        },
+        {
+          "ID": "CHEM 101",
+          "semester": "Fall",
+          "year": 3,
+          "credits": 3,
+          "requirements": [
+            "SS"
+          ]
+        },
+        {
+          "ID": "CHEM 101 Lab",
+          "semester": "Fall",
+          "year": 3,
+          "credits": 1,
+          "requirements": [
+            "SS"
+          ]
+        },
+        {
+          "ID": "CPEG 586",
+          "semester": "Spring",
+          "year": 2,
+          "credits": 3,
           "requirements": [
             "HU"
           ]
