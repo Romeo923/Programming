@@ -1,7 +1,7 @@
 {
   "Students": [
     {
-      "name": "Romeo Capozziello",
+      "name": "Romeo",
       "ID": 1072300,
       "courses": [
         {
@@ -12,7 +12,7 @@
           "requirements": []
         },
         {
-          "ID": "Real Analysis MATH-500",
+          "ID": "Real Analysis MATH-999",
           "semester": "Spring",
           "year": 1,
           "credits": 3,
@@ -21,9 +21,25 @@
       ]
     },
     {
-      "name": "Santa Claus",
+      "name": "Marco",
       "ID": 123456789,
       "courses": [
+        {
+          "ID": "Nuclear Physics",
+          "semester": "Fall",
+          "year": 1,
+          "credits": 3,
+          "requirements": []
+        },
+        {
+          "ID": "Deep Learning",
+          "semester": "Fall",
+          "year": 2,
+          "credits": 3,
+          "requirements": [
+            "SS"
+          ]
+        },
         {
           "ID": "Thermodynamics PHYS-700",
           "semester": "Spring",

@@ -28,14 +28,8 @@ class Student:
         self.ID = id
         self.courses = [Course(id=data["ID"],credits=data["credits"],requirements=data["requirements"],semester=data["semester"],year=data["year"]) for data in courses]
 
-    def adddCourse(self,course):
-        self.courses.append(course)
-
     def getCourses(self,semester,year):
         return [course for course in self.courses if (course.semester == semester and course.year == year)]
-
-    def totalCreds(self):
-        return sum([course.credits for course in self.courses])
 
     def __str__(self):
         
