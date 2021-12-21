@@ -1,6 +1,6 @@
 import json
 from tkinter import *
-# from tkmacosx import *
+from tkmacosx import *
 from tkinter import ttk
 
 class Course:
@@ -95,7 +95,7 @@ class Table(Frame):
 
             self.course_data.append((name,reqs,creds))
 
-        for i in range(len(course_list),8):
+        for i in range(len(course_list),6):
             name = Entry(self,width=40)
             name.grid(column=0,row=i+1)
 
@@ -117,7 +117,8 @@ class Form:
 
     def __init__(self,file_path):
         self.root = Tk()
-        self.root.geometry("800x1200")
+        self.root.geometry("1200x1200")
+        self.root.title('Student Course Data')
         self.frame = Frame(self.root)
 
         self.file_path = file_path

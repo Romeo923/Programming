@@ -5,10 +5,10 @@
       "ID": 1072300,
       "courses": [
         {
-          "ID": "Nuclear Physics PHYS-900",
+          "ID": "Nuclear Physics PHYS-999",
           "semester": "Fall",
           "year": 1,
-          "credits": 4,
+          "credits": 5,
           "requirements": []
         },
         {
@@ -37,37 +37,6 @@
           "year": 2,
           "credits": 3,
           "requirements": []
-        }
-      ]
-    },
-    {
-      "name": "Hannes Anders",
-      "ID": 789456,
-      "courses": [
-        {
-          "ID": "Math 217",
-          "semester": "Fall",
-          "year": 1,
-          "credits": 3,
-          "requirements": [
-            "SS"
-          ]
-        },
-        {
-          "ID": "Phys 207",
-          "semester": "Fall",
-          "year": 1,
-          "credits": 3,
-          "requirements": []
-        },
-        {
-          "ID": "CPEG 586",
-          "semester": "Spring",
-          "year": 2,
-          "credits": 3,
-          "requirements": [
-            "HU"
-          ]
         }
       ]
     }
