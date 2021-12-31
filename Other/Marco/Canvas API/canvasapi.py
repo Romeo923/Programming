@@ -3,26 +3,28 @@ import requests
 import sys
 
 token = '19~oYg0RXgAQTv8YVsrSdUZfb0kmFVNsdu8z4CSoDLDvcsLhUoRnidKjR8SXDmDtIDu'
+
 headers = {"Authorization": f"Bearer {token}"}
 
 ub_url = f'https://bridgeport.instructure.com/api/v1/'
 
-grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
+# path = '1865191.Homework.csv' # manual path entry for testing
 
-# path = sys.argv[1]
-# grades = pd.read_csv(path)
+try:
+    path = sys.argv[1]
+except IndexError:
+    print('\nEnter canvasapi.py course_id.group_name.csv\n')
+    sys.exit(0)
+
+parts = path.split('.')
+
+course_id = parts[0]
+group_name = 'Default' if len(parts) < 3 else parts[1]
+
+grades = pd.read_csv(path)
 
 student, ID, SIS_Login, section, assignment = grades
 points_possible = grades[assignment][0]
-
-#Not Finished
-def getCourseID(course_name):
-    response = requests.get(url=f'{ub_url}courses/',headers=headers)
-    courses = response.json()
-    for course in courses:
-        print(course['course_code'])
-        if course['course_code'] == course_name:
-            return course['id']
 
 def createAssignment(course_id, data):
     full_path = f'{ub_url}courses/{course_id}/assignments/'
@@ -39,7 +41,7 @@ def getAssignmentID(course_id):
 
 def gradeAssignment(course_id, assignment_id, user_id, data):
     full_path = f'{ub_url}courses/{course_id}/assignments/{assignment_id}/submissions/{user_id}'
-    requests.put(url=full_path,headers=headers,params=data)
+    return requests.put(url=full_path,headers=headers,params=data)
 
 def getAssignmentGroup(course_id, group_name):
     full_path = f'{ub_url}courses/{course_id}/assignment_groups/'
@@ -57,11 +59,6 @@ def getAssignmentGroup(course_id, group_name):
 
 def main():
 
-    #get course id
-    # course_id = getCourseID(grades[section][1])
-    course_id = '1865191'
-
-    #check if assignment exists, if not, create it
     assignment_id = getAssignmentID(course_id)
 
     if assignment_id == -1:
@@ -72,38 +69,32 @@ def main():
         'assignment[published]' : True
         }
 
-        possible_groups = ['Homework', 'Quiz']
-
-        group_name = 'Default'
-        for g in possible_groups:
-            group_name = g if g in assignment else group_name
-
         group = getAssignmentGroup(course_id, group_name)
 
-        str= f'\nCreated Assignment: {assignment}'
+        update_str= f'\nCreated Assignment: {assignment}'
 
         if group is not None:
             data['assignment[assignment_group_id]'] = group['id']
-            str+= f' in group: {group["name"]}'
-        str += '\n'
+            update_str+= f' in group: {group["name"]}'
+        update_str += '\n'
         
         assignment_id = createAssignment(course_id,data).json()['id']
         
-        print(str)
+        print(update_str)
 
-    # for i in range(1,len(grades)):
-    #     student_name = grades[student][i]
-    #     student_id = grades[ID][i]
-    #     student_sis = grades[SIS_Login][i]
-    #     course_section = grades[section][i]
-    #     assignment_grade = grades[assignment][i]
+    for i in range(1,len(grades)):
+        # student_name = grades[student][i] # useless
+        student_id = int(grades[ID][i])
+        # student_sis = grades[SIS_Login][i] # useless
+        # course_section = grades[section][i] # useless
+        assignment_grade = grades[assignment][i]
 
-    #     data = {
-    #         'submission[posted_grade]' : assignment_grade
-    #     }
+        data = {
+            'submission[posted_grade]' : assignment_grade
+        }
 
-    #     response = gradeAssignment(course_id, assignment_id, student_id, data)
-    #     print(response)
+        response = gradeAssignment(course_id, assignment_id, student_id, data)
+        print(response)
 
 
 if __name__ == '__main__':
