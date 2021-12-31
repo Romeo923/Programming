@@ -6,11 +6,19 @@ headers = {"Authorization": f"Bearer {token}"}
 
 ub_url = f'https://bridgeport.instructure.com/api/v1/'
 
-grades = pd.read_csv('Other\Marco\Python\\testing.csv')
+grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
 
 student, ID, SIS_Login, section, assignment = grades
 points_possible = grades[assignment][0]
 
+#Not Finished
+def getCourseID(course_name):
+    response = requests.get(url=f'{ub_url}courses/',headers=headers)
+    courses = response.json()
+    for course in courses:
+        print(course['course_code'])
+        if course['course_code'] == course_name:
+            return course['id']
 
 def createAssignment(course_id, data):
     full_path = f'{ub_url}courses/{course_id}/assignments/'
@@ -45,6 +53,7 @@ def getAssignmentGroup(course_id, name):
 def main():
 
     #get course id
+    # course_id = getCourseID(grades[section][1])
     course_id = '1865191'
 
     #check if assignment exists, if not, create it
@@ -94,20 +103,11 @@ def main():
         print(response)
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     main()
 
 
 
-
-course_id = '1865191'
-assignment_id = '14717796'
 
 
 
