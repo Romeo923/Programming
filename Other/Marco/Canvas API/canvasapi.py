@@ -1,12 +1,16 @@
 import pandas as pd
 import requests
+import sys
 
 token = '19~oYg0RXgAQTv8YVsrSdUZfb0kmFVNsdu8z4CSoDLDvcsLhUoRnidKjR8SXDmDtIDu'
 headers = {"Authorization": f"Bearer {token}"}
 
 ub_url = f'https://bridgeport.instructure.com/api/v1/'
 
-grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
+path = sys.argv[1]
+
+# grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
+grades = pd.read_csv(path)
 
 student, ID, SIS_Login, section, assignment = grades
 points_possible = grades[assignment][0]
@@ -44,8 +48,6 @@ def getAssignmentGroup(course_id, name):
 
     for group in groups:
         if name in group['name']:
-            print(group['name'])
-            print(group['id'])
             return group
     
     return None
@@ -75,32 +77,30 @@ def main():
 
         group = getAssignmentGroup(course_id, name)
 
-        str= f'Created Assignment: {assignment}'
+        str= f'\nCreated Assignment: {assignment}'
 
         if group is not None:
             data['assignment[assignment_group_id]'] = group['id']
             str+= f' in group: {group["name"]}'
-
+        str += '\n'
+        
         assignment_id = createAssignment(course_id,data).json()['id']
         
         print(str)
 
-    print(assignment_id)
+    # for i in range(1,len(grades)):
+    #     student_name = grades[student][i]
+    #     student_id = grades[ID][i]
+    #     student_sis = grades[SIS_Login][i]
+    #     course_section = grades[section][i]
+    #     assignment_grade = grades[assignment][i]
 
+    #     data = {
+    #         'submission[posted_grade]' : assignment_grade
+    #     }
 
-    for i in range(1,len(grades)):
-        student_name = grades[student][i]
-        student_id = grades[ID][i]
-        student_sis = grades[SIS_Login][i]
-        course_section = grades[section][i]
-        assignment_grade = grades[assignment][i]
-
-        data = {
-            'submission[posted_grade]' : assignment_grade
-        }
-
-        response = gradeAssignment(course_id, assignment_id, student_id, data)
-        print(response)
+    #     response = gradeAssignment(course_id, assignment_id, student_id, data)
+    #     print(response)
 
 
 if __name__ == '__main__':
