@@ -7,10 +7,10 @@ headers = {"Authorization": f"Bearer {token}"}
 
 ub_url = f'https://bridgeport.instructure.com/api/v1/'
 
-path = sys.argv[1]
+grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
 
-# grades = pd.read_csv('Other\Marco\Canvas API\\testing.csv')
-grades = pd.read_csv(path)
+# path = sys.argv[1]
+# grades = pd.read_csv(path)
 
 student, ID, SIS_Login, section, assignment = grades
 points_possible = grades[assignment][0]
@@ -41,15 +41,18 @@ def gradeAssignment(course_id, assignment_id, user_id, data):
     full_path = f'{ub_url}courses/{course_id}/assignments/{assignment_id}/submissions/{user_id}'
     requests.put(url=full_path,headers=headers,params=data)
 
-def getAssignmentGroup(course_id, name):
+def getAssignmentGroup(course_id, group_name):
     full_path = f'{ub_url}courses/{course_id}/assignment_groups/'
     response = requests.get(url=full_path,headers=headers)
     groups = response.json()
 
     for group in groups:
-        if name in group['name']:
+        if group_name in group['name']:
             return group
     
+    if group_name != 'Default':
+        print(f'\nCreated group: {group_name}')
+        return requests.post(url=full_path,headers=headers,params={'name':group_name}).json()
     return None
 
 def main():
@@ -71,11 +74,11 @@ def main():
 
         possible_groups = ['Homework', 'Quiz']
 
-        name = 'Has No Group'
+        group_name = 'Default'
         for g in possible_groups:
-            name = g if g in assignment else name
+            group_name = g if g in assignment else group_name
 
-        group = getAssignmentGroup(course_id, name)
+        group = getAssignmentGroup(course_id, group_name)
 
         str= f'\nCreated Assignment: {assignment}'
 
@@ -105,9 +108,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
 
