@@ -125,12 +125,10 @@ def gradeAssignment(path):
     print('Grading Done')
 
 def uploadAssignmentPDF(path):
-    course_id, assignment, ext = path.split('.')
+    course_id, group_name, assignment, max_points, ext = path.split('.')
     assignment_name = assignment.replace('_',' ')
-    points_possible = 3
-    group_name = 'Homework'
 
-    assignment_id = checkAssignment(course_id=course_id, assignment=assignment_name, points_possible=points_possible, group_name=group_name)
+    assignment_id = checkAssignment(course_id=course_id, assignment=assignment_name, points_possible=max_points, group_name=group_name)
 
     data = {
         'name':f'{assignment}.pdf',
@@ -152,13 +150,13 @@ def uploadAssignmentPDF(path):
 
 def main():
 
-    path = '1865191.Homework_5.pdf' # manual path entry for testing
+    # path = '1865191.Homework.Homework_5.10.pdf' # manual path entry for testing
 
-    # try:
-    #     path = sys.argv[1]
-    # except IndexError:
-    #     print('\nEnter canvasapi.py course_id.group_name.csv\n')
-    #     sys.exit(0)
+    try:
+        path = sys.argv[1]
+    except IndexError:
+        print('\nEnter canvasapi.py course_id.group_name.csv\n')
+        sys.exit(0)
     
     if 'csv' in path:
         gradeAssignment(path)
