@@ -12,7 +12,7 @@ def createAssignment(course_id, data):
     full_path = f'{ub_url}courses/{course_id}/assignments/'
     return requests.post(url=full_path,headers=headers,params=data)
 
-def uploadFile(course_id, assignment_id, path, data):
+def uploadFile(course_id, name, path, data):
     full_path = f'{ub_url}courses/{course_id}/files'
     
     response = requests.post(url=full_path,headers=headers,params=data)
@@ -20,17 +20,26 @@ def uploadFile(course_id, assignment_id, path, data):
     
     upload_url = output['upload_url']
     upload_params = output['upload_params']
-    upload_params['file'] = f'@{path}'
-    print(upload_params)
     
-    response = requests.post(url=upload_url, params=upload_params)
-    print(response)
+    file = {'file': open(path,'rb')}
+    
+    response = requests.post(url=upload_url, params=upload_params, files=file)
     
     if response.status_code >= 300 and response.status_code <= 399: 
         location = response.json()['Location']
-        print(location)
         response = requests.post(url=location,headers=headers)
     
+    # file_id = response.json()['id']
+
+    # params = {
+    #     'name':f'{name}.pdf'
+    # }
+    # print(file_id)
+    # print(params)
+
+    # response = requests.put(f'{full_path}/{file_id}',headers=headers,params=params)
+    # print(response.reason)
+
     return response
 
 def getAssignmentID(course_id, assignment):
@@ -116,23 +125,34 @@ def gradeAssignment(path):
     print('Grading Done')
 
 def uploadAssignmentPDF(path):
-    course_id, assignment_name, ext = path.split('.')
+    course_id, assignment, ext = path.split('.')
+    assignment_name = assignment.replace('_',' ')
     points_possible = 3
+    group_name = 'Homework'
 
-    assignment_id = checkAssignment(course_id=course_id, assignment=assignment_name, points_possible=points_possible, group_name='Homework')
+    assignment_id = checkAssignment(course_id=course_id, assignment=assignment_name, points_possible=points_possible, group_name=group_name)
 
     data = {
-        'name':f'{assignment_name}.pdf'
+        'name':f'{assignment}.pdf',
         # 'size':'',
-        # 'parent_folder_path':''
+        'parent_folder_path':group_name
     }
 
-    response = uploadFile(course_id, assignment_id, path, data)
-    print(response)
+    response = uploadFile(course_id, assignment_name, path, data)
+    print(f'\nUpladed file: {assignment}.pdf into folder: {group_name}\n')
+    
+    file_id = response.json()['id']
+    full_path = f'{ub_url}courses/{course_id}/assignments/{assignment_id}'
+
+    file_preview = f'<p><a class="instructure_file_link instructure_scribd_file auto_open" title="{assignment}.pdf" href="https://bridgeport.instructure.com/courses/{course_id}/files/{file_id}?wrap=1" target="_blank" rel="noopener" data-api-endpoint="https://bridgeport.instructure.com/api/v1/courses/{course_id}/files/{file_id}" data-api-returntype="File">{assignment}.pdf</a></p>'
+
+    response = requests.put(url=full_path,headers=headers,params={'assignment[description]':file_preview})
+    print(f'Attached file to Assignment: {assignment_name}\n')
+    
 
 def main():
 
-    path = '1865191.Test_PDF_Upload.pdf' # manual path entry for testing
+    path = '1865191.Homework_5.pdf' # manual path entry for testing
 
     # try:
     #     path = sys.argv[1]
