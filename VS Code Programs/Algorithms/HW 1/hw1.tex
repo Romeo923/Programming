@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+    \begin{center}
+        Romeo Capozziello HW 1
+    \end{center}
+    Problem 1: \\ 
+    Using direct proof, prove: If n is any even interger, then $(-1)^n$ = 1\\
+    \\
+    If n is even then n = 2k\\
+    Then $(-1^n)$ = $(-1^{2k})$ = $(-1^k) * (-1^k)$\\
+    If $(-1^k) = 1$, then $(-1^k) * (-1^k) = 1 * 1 = 1$ \\
+    If $(-1^k) = -1$, then $(-1^k) * (-1^k) = -1 * -1 = 1$ \\
+    Then $(-1^k) * (-1^k) = 1 \rightarrow (-1^{2k}) = 1 \rightarrow (-1^n) = 1$\\
+    \\
+    \rule{\textwidth}{0.5pt}\\
+    Problem 2: \\
+    Using induction proof, prove for integer $n \geq 5$, $4n < 2^n$\\
+    \\
+    Base Case: n = 5, $4(5) < 2^5 \rightarrow 20 < 32$\\
+    Assume true for n = k, $4k < 2^k$\\
+    $4(k+1) = 4k + 4)$\\
+    $2^{k+1} = 2^k*2 = 2^k + 2^k$\\\\
+    $4k + 4 < 2^k + 2k$\\
+    $4k < 2^k + 2^k - 4$\\
+    $4k < 2^k$ by assumption\\
+    Then $4k < 2^k < 2^k + 2^k - 4$\\
+    Then $4k < 2^k + 2^k - 4 \rightarrow 4k < 2^{k+1} - 4 \rightarrow 4k + 4 < 2^{k+1}$\\
+    Then $4(k+1) < 2^{k+1}$\\
+    \\
+    \rule{\textwidth}{0.5pt}\\
+    Problem 3: \\
+    Prove by induction that $(11^n - 6)$ is divisible by 5 for every possible integer n.\\
+    \\
+    Base Case: n = 0, 5 $|$ $(11^0 - 6) \rightarrow$ 5 $|$ (1-6) $\rightarrow$ 5 $|$ -5\\
+    Assume true for n = k, 5 $|$ $(11^k - 6)$\\\\
+    5 $|$ $(11^{k+1} - 6)$\\
+    $11^{k+1} - 6 = 11*11^k - 6$\\
+    5 $|$ $(11^k - 6)$ by assumption, thus $11^k = 5x + 6$\\
+    $11^{k+1} - 6$  =  $11*11^k - 6$  =  $11 * (5x + 6) - 6$  =  $55x + 66 - 6$  =  $55x + 60$\\
+    $55x + 60 = 5*(11x + 12)$, 5 $|$ $5(11x + 12)$\\
+    5 $|$ $(11^{k+1} - 6)$\\
+    \\
+    \rule{\textwidth}{0.5pt}\\
+    Problem 4: \\
+    Prove the following statement by Contradiction\\
+    The sum of a rational number and an irrational number is irrational.\\
+    \\
+    Assume a the sum of a rational and irrational number was rational\\
+    Let x be an irrational number\\\\
+    Then $\frac{a}{b} + x = \frac{c}{d}$\\
+    Then x = $\frac{c}{d} - \frac{a}{b}$\\
+    Then x = $\frac{bc - da}{bd}$\\\\
+    Since $\frac{a}{b}$ and $\frac{c}{d}$ are rational, then their difference, $\frac{bc - da}{bd}$ is also rational\\
+    And since x = $\frac{bc - da}{bd}$, then x is rational\\
+    But x is irrational by definition
+\end{document}
