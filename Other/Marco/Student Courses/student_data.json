@@ -12,6 +12,16 @@
           "requirements": []
         },
         {
+          "ID": "Deep Learning ",
+          "semester": "Fall",
+          "year": 1,
+          "credits": 3,
+          "requirements": [
+            "HU",
+            "SS"
+          ]
+        },
+        {
           "ID": "Real Analysis MATH-999",
           "semester": "Spring",
           "year": 1,
@@ -53,6 +63,28 @@
           "year": 2,
           "credits": 3,
           "requirements": []
+        }
+      ]
+    },
+    {
+      "name": "Hannes",
+      "ID": 34567,
+      "courses": [
+        {
+          "ID": "Computer Vision",
+          "semester": "Fall",
+          "year": 1,
+          "credits": 4,
+          "requirements": []
+        },
+        {
+          "ID": "Real Analysis",
+          "semester": "Spring",
+          "year": 2,
+          "credits": 6,
+          "requirements": [
+            "HU"
+          ]
         }
       ]
     }

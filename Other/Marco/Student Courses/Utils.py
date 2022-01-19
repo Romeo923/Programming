@@ -49,7 +49,7 @@ class StatBar(Frame):
     def __init__(self,parent,course_list,borderwidth=0,relief="solid"):
         Frame.__init__(self,parent,borderwidth=borderwidth,relief=relief)
 
-        self.reqs = ["SS","HU"]
+        self.reqs = ["SS","HU","FA"]
 
         for i, req in enumerate(self.reqs):
             Label(self,text=f'{req} Credits').grid(column=i,row=0)
@@ -219,7 +219,7 @@ class Form:
 
     def generateAllCourseTables(self,student):
         semesters = ["Fall","Spring"]
-        years = 2
+        years = 4
         course_tables =[]
         course_frame = Frame(self.frame)
 
