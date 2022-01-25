@@ -49,4 +49,6 @@ class TheNaturals:
 
 the_naturals = TheNaturals()
 
-print(the_naturals[15])
+print(the_naturals[0])
+print(the_naturals[1])
+print(the_naturals[2])
