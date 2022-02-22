@@ -1,0 +1,19 @@
+{
+  "User1": {
+    "password": "password123",
+    "id": "ID123456",
+    "keys": [
+      {
+        "temporary": false,
+        "endDate": "inf",
+        "id": "ID123465",
+        "hasAccess": []
+      }
+    ]
+  },
+  "Username": {
+    "password": "Password123$",
+    "id": "1",
+    "keys": []
+  }
+}
