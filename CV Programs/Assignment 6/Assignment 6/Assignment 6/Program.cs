@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CV_Assignment_5
+namespace Assignment_6
 {
-
     static class Program
     {
-        
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
         [STAThread]
-
-
         static void Main()
         {
             Application.EnableVisualStyles();
