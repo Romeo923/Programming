@@ -97,12 +97,35 @@ namespace Assignment_6
                 Matrix B = new Matrix(4, 1);
                 for (int i = 0; i < Shp1.Count; i++)
                 {
-                    A[0, 0] += 2 * Shp2[i].X * Shp2[i].X + 2 * Shp2[i].Y * Shp2[i].Y;
-                    // provide the code for remaining A matrix entries …
-                    A[3, 3] += -2;
-                    B[0, 0] += 2 * Shp1[i].X * Shp2[i].X + 2 * Shp1[i].Y * Shp2[i].Y;
-                    // provide the code for remaining B matrix entries …
-                    B[3, 0] += -2 * Shp1[i].Y;
+                    Point p1 = Shp1[i];
+                    int x1 = p1.X;
+                    int y1 = p1.Y;
+
+                    Point p2 = Shp2[i];
+                    int x2 = p2.X;
+                    int y2 = p2.Y;
+
+                    A[0, 0] += 2 * x2 * x2 + 2 * y2 * y2;
+
+                    A[0, 2] += 2 * x2;
+                    A[0, 3] += 2 * y2;
+
+                    A[1, 1] += 2 * x2 * x2 + 2 * y2 * y2;
+                    A[1, 2] += 2 * y2;
+                    A[1, 3] -= 2 * x2;
+
+                    A[2, 0] -= 2 * x2;
+                    A[2, 1] -= 2 * y2;
+                    A[2, 2] -= 2;
+
+                    A[3, 0] -= 2 * y2;
+                    A[3, 1] += 2 * x2;
+                    A[3, 3] -= 2;
+
+                    B[0, 0] += 2 * x1 * x2 + 2 * y1 * y2;
+                    B[1, 0] += 2 * x1 * y2 - 2 * x2 * y1;
+                    B[2, 0] -= 2 * x1;
+                    B[3, 0] -= 2 * y1;
 
                 }
                 Matrix Ainv = A.Inverse;
@@ -135,5 +158,19 @@ namespace Assignment_6
             public double T2 { get; set; }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnInitializeShapes_Click(sender, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            btnApplyTransformation_Click(sender, e);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Do RANSAC
+        }
     }
 }
