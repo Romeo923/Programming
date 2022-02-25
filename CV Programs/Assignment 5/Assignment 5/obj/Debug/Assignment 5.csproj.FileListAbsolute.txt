@@ -1,0 +1,10 @@
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\bin\Debug\Assignment 5.exe.config
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\bin\Debug\Assignment 5.exe
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\bin\Debug\Assignment 5.pdb
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment 5.csproj.AssemblyReference.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment_5.Form1.resources
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment_5.Properties.Resources.resources
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment 5.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment 5.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment 5.exe
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 5\Assignment 5\obj\Debug\Assignment 5.pdb
