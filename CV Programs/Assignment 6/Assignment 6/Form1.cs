@@ -56,7 +56,7 @@ namespace Assignment_6
         private void btnApplyTransformation_Click(object sender, EventArgs e)
         {
             Transformation T = ICPTransformation.ComputeTransformation(Shape1, Shape2);
-            MessageBox.Show("Cost = " + ICPTransformation.ComputeCost(Shape1, Shape2, T).ToString());
+            textBox1.Text = "Cost = " + ICPTransformation.ComputeCost(Shape1, Shape2, T).ToString();
             List<Point> Shape2T = ApplyTransformation(T, Shape2);
             Pen pBlue = new Pen(Brushes.Blue, 1);
             Pen pRed = new Pen(Brushes.Red, 1);
@@ -87,6 +87,80 @@ namespace Assignment_6
                 TList.Add(pTrans);
             }
             return TList;
+        }
+
+        void Ransac(List<Point> shp1, List<Point> shp2)
+        {
+            int iterations = 5000;
+            int starting_points = 3;
+            int min_points = 6;
+            List<Point> best_shape1 = null;
+            List<Point> best_shape2 = null;
+            Transformation best_transformation = null;
+            double best_error = int.MaxValue;
+
+            for (int i = 0; i < iterations; i++)
+            {
+                Point?[] list1 = new Point?[Shape1.Count];
+                Point?[] list2 = new Point?[Shape2.Count];
+
+                Random random = new Random();
+                int points = 0;
+                while(points < starting_points)
+                {
+                    int index = random.Next(0, Shape1.Count);
+                    if (list1[index] == null)
+                    {
+                        list1[index] = (Shape1[index]);
+                        list2[index] = (Shape2[index]);
+                        points++;
+                    }
+
+                }
+                
+                for(int j = 0; j < Shape1.Count; j++)
+                {
+                    if (list1[j] != null) continue;
+                    list1[j] = Shape1[j];
+                    list2[j] = Shape2[j];
+                    List<Point> temp_list1 = new List<Point>();
+                    List<Point> temp_list2 = new List<Point>();
+
+                    for(int k = 0; k < list1.Length; k++)
+                    {
+                        if(list1[k] != null)
+                        {
+                            temp_list1.Add((Point)list1[k]);
+                            temp_list2.Add((Point)list2[k]);
+                        }
+                    }
+
+                    Transformation temp_transform = ICPTransformation.ComputeTransformation(temp_list1, temp_list2);
+                    double error = ICPTransformation.ComputeCost(temp_list1, temp_list2, temp_transform);
+                    if((error < best_error && temp_list1.Count < min_points) || best_shape1.Count < min_points)
+                    {
+                        best_error = error;
+                        best_transformation = temp_transform;
+                        best_shape1 = temp_list1;
+                        best_shape2 = temp_list2;
+                    }
+                    else
+                    {
+                        list1[j] = null;
+                        list2[j] = null;
+                    }
+                }
+
+            }
+
+            best_shape2 = ApplyTransformation(best_transformation, best_shape2);
+            Pen pBlue = new Pen(Brushes.Blue, 1);
+            Pen pRed = new Pen(Brushes.Red, 1);
+            Graphics g = panShape3.CreateGraphics();
+            g.Clear(BackColor);
+            DisplayShape(best_shape1, pBlue, g);
+            DisplayShape(best_shape2, pRed, g);
+            textBox2.Text = "Error: " + best_error;
         }
 
         class ICPTransformation
@@ -170,7 +244,7 @@ namespace Assignment_6
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Do RANSAC
+            Ransac(Shape1, Shape2);
         }
     }
 }
