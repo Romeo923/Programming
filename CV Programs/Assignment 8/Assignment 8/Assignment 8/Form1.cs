@@ -31,7 +31,7 @@ namespace Assignment_8
 
         void loadImages()
         {
-            string training_path = "C:/Users/Romeo/Desktop/Extra/Test Images/ATTFaceDataSet/Training/";
+            string training_path = "C:/Users/Romeo/Desktop/Coding/Programming/Test Images/ATTFaceDataSet/Training/";
 
             size = image_width * image_height;
             number_of_images = classes * images_per_class;
