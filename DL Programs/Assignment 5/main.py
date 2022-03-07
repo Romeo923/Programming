@@ -6,6 +6,7 @@ from Network import Network
 from ActivationType import ActivationType
 from LROptimizationType import LROptimizationType
 from BatchNormMode import *
+
 def main():
     train = np.empty((1000,28,28),dtype='float64')
     trainY = np.zeros((1000,10))
