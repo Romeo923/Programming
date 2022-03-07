@@ -176,7 +176,8 @@ namespace Assignment_8
                 }
             }
             Matrix features = (Matrix)image.Transpose().Multiply(eig_faces);
-            Matrix reconstruct = (Matrix)eig_faces.Multiply(features.Transpose());
+            Matrix reconstruct = (Matrix)features.Multiply(eig_faces.Transpose());
+            reconstruct = (Matrix)reconstruct.Transpose();
             Bitmap reconstructed_image = new Bitmap(image_width, image_height);
 
             int best1 = 0;
@@ -234,7 +235,7 @@ namespace Assignment_8
 
             for(int i = 0; i< size; i++)
             {
-                int p = (int)reconstruct[i, 0];
+                long p = (long)reconstruct[i, 0];
                 min = p < min ? p : min;
                 max = p > max ? p : max;
             }
