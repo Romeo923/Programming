@@ -23,46 +23,13 @@ namespace ConvolFilters
             {
                 try
                 {
-                    //Bitmap bmp = new Bitmap("d:\\csharp2015\\images\\scenery1.jpg");
-                    //double[][] kernel = new double[3][];
-                    //for (int i = 0; i < 3; i++)
-                    //    kernel[i] = new double[3];
-                    //kernel[0][0] = 1 / 9.0;
-                    //kernel[0][1] = 1 / 9.0;
-                    //kernel[0][2] = 1 / 9.0;
-                    //kernel[1][0] = 1 / 9.0;
-                    //kernel[1][1] = 1 / 9.0;
-                    //kernel[1][2] = 1 / 9.0;
-                    //kernel[2][0] = 1 / 9.0;
-                    //kernel[2][1] = 1 / 9.0;
-                    //kernel[2][2] = 1 / 9.0;
-
-                    //kernel[0][0] = 0;
-                    //kernel[0][1] = -1;
-                    //kernel[0][2] = 0;
-                    //kernel[1][0] = -1;
-                    //kernel[1][1] = 5;
-                    //kernel[1][2] = -1;
-                    //kernel[2][0] = 0;
-                    //kernel[2][1] = -1;
-                    //kernel[2][2] = 0;
-
-                    //kernel[0][0] = -1;
-                    //kernel[0][1] = -1;
-                    //kernel[0][2] = -1;
-                    //kernel[1][0] = 0;
-                    //kernel[1][1] = 0;
-                    //kernel[1][2] = 0;
-                    //kernel[2][0] = 1;
-                    //kernel[2][1] = 1;
-                    //kernel[2][2] = 1;
-
-
+                    
                     Bitmap bmp = new Bitmap(pic1.Image);
                     string kText = filterText.Text;
                     string[] kTextln = kText.Split('\n');
                     int n = kTextln.Length;
                     double[][] kernel = new double[n][];
+                    double sum = 0;
 
                     for (int i = 0; i < n; i++)
                     {
@@ -71,10 +38,24 @@ namespace ConvolFilters
                         for(int j = 0; j < line.Length; j++)
                         {
                             string c = line[j].Trim();
-                            kernel[i][j] = Convert.ToInt32(c);
+                            kernel[i][j] = Convert.ToDouble(c);
+                            sum += kernel[i][j];
                         }
                     
                     }
+
+                    sum = sum > 0 ? sum : 1;
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        for (int j = 0; j < n; j++)
+                        {
+                            kernel[i][j] /= sum;
+                            
+                        }
+
+                    }
+
                     MyImageProc.CovertToGray(bmp);
                     MyImageProc.Convolve(bmp, kernel);
                     pic2.Image = null;
@@ -127,12 +108,12 @@ namespace ConvolFilters
 
         private void button2_Click(object sender, EventArgs e)
         {
-            filterText.Text = "1,1,1\n1,0,1\n1,1,1";
+            filterText.Text = "1,1,1\n1,1,1\n1,1,1";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            filterText.Text = "-1,-1,-1\n-1,1,-1\n-1,-1,-1";
+            filterText.Text = "-1,-1,-1\n-1,0,-1\n-1,-1,-1";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -158,6 +139,92 @@ namespace ConvolFilters
         private void button8_Click(object sender, EventArgs e)
         {
             filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+        }
+
+        private void sobelXbtn_Click(object sender, EventArgs e)
+        {
+            filterText.Text = "-1,0,1\n-2,0,2\n-1,0,1";
+        }
+
+        private void sobelYbtn_Click(object sender, EventArgs e)
+        {
+            filterText.Text = "-1,-2,-1\n0,0,0\n1,2,1";
+        }
+
+        private void edgeBtn_Click(object sender, EventArgs e)
+        {
+            //string sobelX = "-1,0,1\n-2,0,2\n-1,0,1";
+            double[][] sobelX1 = new double[][]
+            {
+                new double[] { -1, 0, 1 },
+                new double[] { -2, 0, 2 },
+                new double[] { -1, 0, 1 },
+            };
+
+            //string sobelY = "-1,-2,-1\n0,0,0\n1,2,1";
+
+            double[][] sobelY1 = new double[][]
+            {
+                new double[] { -1, -2, -1 },
+                new double[] { 0, 0, 0 },
+                new double[] { 1, 2, 1 },
+            };
+
+            //string sobelX = "-1,0,1\n-2,0,2\n-1,0,1";
+            double[][] sobelX2 = new double[][]
+            {
+                new double[] { 1, 0, -1 },
+                new double[] { 2, 0, -2 },
+                new double[] { 1, 0, -1 },
+            };
+
+            //string sobelY = "-1,-2,-1\n0,0,0\n1,2,1";
+
+            double[][] sobelY2 = new double[][]
+            {
+                new double[] { 1, 2, 1 },
+                new double[] { 0, 0, 0 },
+                new double[] { -1, -2, -1 },
+            };
+
+            Bitmap X1 = new Bitmap(pic1.Image);
+            Bitmap Y1 = new Bitmap(pic1.Image);
+            Bitmap X2 = new Bitmap(pic1.Image);
+            Bitmap Y2 = new Bitmap(pic1.Image);
+            MyImageProc.CovertToGray(X1);
+            MyImageProc.CovertToGray(Y1);
+            MyImageProc.CovertToGray(X2);
+            MyImageProc.CovertToGray(Y2);
+            MyImageProc.Convolve(X1, sobelX1);
+            MyImageProc.Convolve(Y1, sobelY1);
+            MyImageProc.Convolve(X2, sobelX2);
+            MyImageProc.Convolve(Y2, sobelY2);
+
+            Bitmap imgEdges = new Bitmap(X1.Width, X1.Height);
+
+            for (int i = 0, pixel; i < X1.Width; i++)
+            {
+                for (int j = 0; j < X1.Height; j++)
+                {
+                    int xp1 = X1.GetPixel(i, j).R;
+                    int yp1 = Y1.GetPixel(i, j).R;
+                    int xp2 = X2.GetPixel(i, j).R;
+                    int yp2 = Y2.GetPixel(i, j).R;
+
+                    int max = 0;
+                    max = xp1 > max ? xp1 : max;
+                    max = yp1 > max ? yp1 : max;
+                    max = xp2 > max ? xp2 : max;
+                    max = yp2 > max ? yp2 : max;
+                    pixel = max;
+                    if (pixel < 50) pixel = 0;
+
+                    imgEdges.SetPixel(i, j, Color.FromArgb(pixel, pixel, pixel));
+                }
+            }
+
+            pic2.Image = null;
+            pic2.Image = imgEdges;
         }
     }
 }

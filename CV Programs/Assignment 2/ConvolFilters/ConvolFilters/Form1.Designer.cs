@@ -40,6 +40,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.edgeBtn = new System.Windows.Forms.Button();
+            this.sobelXbtn = new System.Windows.Forms.Button();
+            this.sobelYbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +93,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 221);
+            this.button1.Location = new System.Drawing.Point(16, 212);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 27);
@@ -101,7 +104,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(16, 268);
+            this.button2.Location = new System.Drawing.Point(16, 252);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 25);
@@ -112,7 +115,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(16, 314);
+            this.button3.Location = new System.Drawing.Point(16, 290);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 25);
@@ -123,7 +126,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(16, 358);
+            this.button4.Location = new System.Drawing.Point(16, 328);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(155, 28);
@@ -134,7 +137,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(16, 405);
+            this.button5.Location = new System.Drawing.Point(16, 369);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(155, 27);
@@ -145,7 +148,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(16, 450);
+            this.button6.Location = new System.Drawing.Point(16, 409);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(155, 25);
@@ -156,7 +159,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(16, 497);
+            this.button7.Location = new System.Drawing.Point(16, 447);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(155, 27);
@@ -167,7 +170,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(16, 540);
+            this.button8.Location = new System.Drawing.Point(16, 487);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(155, 41);
@@ -176,11 +179,47 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // edgeBtn
+            // 
+            this.edgeBtn.Location = new System.Drawing.Point(16, 622);
+            this.edgeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.edgeBtn.Name = "edgeBtn";
+            this.edgeBtn.Size = new System.Drawing.Size(155, 27);
+            this.edgeBtn.TabIndex = 12;
+            this.edgeBtn.Text = "Edge Detection";
+            this.edgeBtn.UseVisualStyleBackColor = true;
+            this.edgeBtn.Click += new System.EventHandler(this.edgeBtn_Click);
+            // 
+            // sobelXbtn
+            // 
+            this.sobelXbtn.Location = new System.Drawing.Point(16, 541);
+            this.sobelXbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sobelXbtn.Name = "sobelXbtn";
+            this.sobelXbtn.Size = new System.Drawing.Size(155, 27);
+            this.sobelXbtn.TabIndex = 13;
+            this.sobelXbtn.Text = "Sobel X";
+            this.sobelXbtn.UseVisualStyleBackColor = true;
+            this.sobelXbtn.Click += new System.EventHandler(this.sobelXbtn_Click);
+            // 
+            // sobelYbtn
+            // 
+            this.sobelYbtn.Location = new System.Drawing.Point(16, 581);
+            this.sobelYbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sobelYbtn.Name = "sobelYbtn";
+            this.sobelYbtn.Size = new System.Drawing.Size(155, 27);
+            this.sobelYbtn.TabIndex = 14;
+            this.sobelYbtn.Text = "Sobel Y";
+            this.sobelYbtn.UseVisualStyleBackColor = true;
+            this.sobelYbtn.Click += new System.EventHandler(this.sobelYbtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 683);
+            this.Controls.Add(this.sobelYbtn);
+            this.Controls.Add(this.sobelXbtn);
+            this.Controls.Add(this.edgeBtn);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -218,6 +257,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button edgeBtn;
+        private System.Windows.Forms.Button sobelXbtn;
+        private System.Windows.Forms.Button sobelYbtn;
     }
 }
 
