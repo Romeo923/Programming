@@ -133,7 +133,7 @@ namespace ConvolFilters
 
         private void button7_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+            filterText.Text = "0,1,0\n1,-4,1\n0,1,0";
         }
 
         private void button8_Click(object sender, EventArgs e)
