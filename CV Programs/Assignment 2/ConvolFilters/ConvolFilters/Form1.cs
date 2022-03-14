@@ -123,7 +123,7 @@ namespace ConvolFilters
 
         private void button5_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+            filterText.Text = "0.499,0.707,0.499\n0.707,1,0.707\n0.499,0.707,0.499"; //gaussean
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -138,7 +138,7 @@ namespace ConvolFilters
 
         private void button8_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+            filterText.Text = "-0.461,0.085,-0.461\n0.085,1.504,0.085\n-0.461,0.085,-0.461";
         }
 
         private void sobelXbtn_Click(object sender, EventArgs e)
