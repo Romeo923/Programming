@@ -118,7 +118,7 @@ namespace ConvolFilters
 
         private void button4_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+            filterText.Text = "0,-0.5,0\n-0.5,3,-0.5\n0,-0.5,0";
         }
 
         private void button5_Click(object sender, EventArgs e)
