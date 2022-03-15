@@ -29,7 +29,7 @@ namespace ConvolFilters
                     string[] kTextln = kText.Split('\n');
                     int n = kTextln.Length;
                     double[][] kernel = new double[n][];
-                    double sum = 0;
+                    double div = Convert.ToDouble(divBox.Text);
 
                     for (int i = 0; i < n; i++)
                     {
@@ -39,21 +39,10 @@ namespace ConvolFilters
                         {
                             string c = line[j].Trim();
                             kernel[i][j] = Convert.ToDouble(c);
-                            sum += kernel[i][j];
+                            kernel[i][j] /= div;
+
                         }
                     
-                    }
-
-                    sum = sum > 0 ? sum : 1;
-
-                    for (int i = 0; i < n; i++)
-                    {
-                        for (int j = 0; j < n; j++)
-                        {
-                            kernel[i][j] /= sum;
-                            
-                        }
-
                     }
 
                     MyImageProc.CovertToGray(bmp);
@@ -103,52 +92,107 @@ namespace ConvolFilters
 
         private void button1_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,0,0\n0,1,0\n0,0,0";
+            filterText.Text = "0,0,0\n0,1,0\n0,0,0"; // identity
+            divBox.Text = "1";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            filterText.Text = "1,1,1\n1,1,1\n1,1,1";
+            filterText.Text = "1,1,1\n1,1,1\n1,1,1"; // average
+            divBox.Text = "9";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            filterText.Text = "-1,-1,-1\n-1,0,-1\n-1,-1,-1";
+            filterText.Text = "-1,-1,-1\n-1,0,-1\n-1,-1,-1"; // high pass
+            divBox.Text = "8";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,-0.5,0\n-0.5,3,-0.5\n0,-0.5,0";
+            filterText.Text = "0,-0.5,0\n-0.5,3,-0.5\n0,-0.5,0"; //sharpening
+            divBox.Text = "1";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0.499,0.707,0.499\n0.707,1,0.707\n0.499,0.707,0.499"; //gaussean
+            double sigma = Convert.ToDouble(sig.Text);
+            string[] output = computeGaussean(sigma).Split(':');
+            string kernel = output[0].Trim();
+            string d = output[1].Trim();
+
+            filterText.Text = kernel; //gaussean
+            divBox.Text = d;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            filterText.Text = "-1,0,1\n-2,0,2\n-1,0,1";
+            filterText.Text = "-1,0,1\n-2,0,2\n-1,0,1"; // gradient
+            divBox.Text = "1";
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            filterText.Text = "0,1,0\n1,-4,1\n0,1,0";
+            filterText.Text = "0,1,0\n1,-4,1\n0,1,0"; // laplacian
+            divBox.Text = "1";
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            filterText.Text = "-0.461,0.085,-0.461\n0.085,1.504,0.085\n-0.461,0.085,-0.461";
+
+            double sigma1 = Convert.ToDouble(sig1.Text);
+            string[] output1 = computeGaussean(sigma1).Split(':');
+            string kernel1 = output1[0].Trim();
+            string[] rows1 = kernel1.Trim().Split('\n');
+            string d1 = output1[1].Trim();
+
+            double sigma2 = Convert.ToDouble(sig2.Text);
+            string[] output2 = computeGaussean(sigma2).Split(':');
+            string kernel2 = output2[0].Trim();
+            string[] rows2 = kernel2.Trim().Split('\n');
+            string d2 = output2[1].Trim();
+
+            double div1 = Convert.ToDouble(d1.Trim());
+            double div2 = Convert.ToDouble(d2.Trim());
+
+            string kernel = "";
+
+            for(int i = 0; i < 3; i++)
+            {
+                string[] nums1 = rows1[i].Trim().Split(',');
+                string[] nums2 = rows2[i].Trim().Split(',');
+                for(int j = 0; j < 3; j++)
+                {
+                    double num1 = Convert.ToDouble(nums1[j].Trim());
+                    num1 *= div2;
+                    double num2 = Convert.ToDouble(nums2[j].Trim());
+                    num2 *= div1;
+                    kernel += sigma1 > sigma2 ? Math.Round(num1 - num2,3) : Math.Round(num2 - num1,3);
+                    kernel += ",";
+
+                }
+                kernel = kernel.Remove(kernel.Length - 1);
+                kernel += "\n";
+
+            }
+            kernel = kernel.Remove(kernel.Length - 1);
+
+
+
+            filterText.Text = kernel; // diff of gaussean
+            divBox.Text = sigma1 > sigma2 ? Math.Round(div1 - div2,3) + "" : Math.Round(div2 - div1,3) + "";
         }
 
         private void sobelXbtn_Click(object sender, EventArgs e)
         {
             filterText.Text = "-1,0,1\n-2,0,2\n-1,0,1";
+            divBox.Text = "1";
         }
 
         private void sobelYbtn_Click(object sender, EventArgs e)
         {
             filterText.Text = "-1,-2,-1\n0,0,0\n1,2,1";
+            divBox.Text = "1";
         }
 
         private void edgeBtn_Click(object sender, EventArgs e)
@@ -225,6 +269,58 @@ namespace ConvolFilters
 
             pic2.Image = null;
             pic2.Image = imgEdges;
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    
+        private string computeGaussean(double sigma)
+        {
+            string kernel = "";
+            double[][] k = new double[3][]
+            {
+                new double[3],
+                new double[3],
+                new double[3]
+            };
+
+            for(int y = 2; y >=0; y--)
+            {
+                for(int x = 0; x <= 2; x++)
+                {
+                    double val = 1;
+                    val /= 2 * Math.PI * sigma * sigma;
+                    double ep = -((x - 1) * (x - 1) + (y - 1) * (y - 1));
+                    val *= Math.Exp(ep);
+                    k[2-y][x] = Math.Round(val,3);
+                }
+            }
+            double center = k[1][1];
+            double sum = 0;
+            for(int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    k[i][j] /= center;
+                    k[i][j] = Math.Round(k[i][j], 3);
+                    sum += k[i][j];
+                    kernel += k[i][j] + ",";
+                }
+                kernel = kernel.Remove(kernel.Length-1);
+                kernel += "\n";
+            }
+            kernel = kernel.Remove(kernel.Length - 1);
+            kernel += ":" + sum;
+
+
+            return kernel;
         }
     }
 }
