@@ -6,8 +6,8 @@ def read_data():
     #uci_tcga_url = "https://archive.ics.uci.edu/ml/machine-learningdatabases/00401/"
     #archive_name = "TCGA-PANCAN-HiSeq-801x20531.tar.gz"
     # above has already been extracted to the following files
-    datafile = "CV Programs\Data Mining\Mid Term\Problem 3\TCGA-PANCAN-HiSeq-801x20531\data.csv"
-    labels_file = "CV Programs\Data Mining\Mid Term\Problem 3\TCGA-PANCAN-HiSeq-801x20531\labels.csv"
+    datafile = "Data Mining\Data Sets\TCGA-PANCAN-HiSeq-801x20531\data.csv"
+    labels_file = "Data Mining\Data Sets\TCGA-PANCAN-HiSeq-801x20531\labels.csv"
     
     data = np.genfromtxt(
         datafile,

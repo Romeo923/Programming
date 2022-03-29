@@ -21,7 +21,7 @@ def classify(message):
 
 def main():
     # TEXTMSG spam collection dataset - https://archive.ics.uci.edu/ml/datasets/sms+spam+collection
-    dfspam = pd.read_csv('CV Programs\Data Mining\Mid Term\Problem 1\SMSSpamCollection.txt', sep='\t',
+    dfspam = pd.read_csv('Data Mining\Data Sets\SMSSpamCollection.txt', sep='\t',
     header=None, names=['Label', 'TEXTMSG'])
 
     print(dfspam.shape)

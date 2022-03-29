@@ -6,5 +6,7 @@ Other/Marco/Student Courses/__pycache__/Utils.cpython-38.pyc
 DL Programs/data
 DL Programs/Assignment 7/__pycache__
 DL Programs/Assignment 7/__pycache__/Utils.cpython-39.pyc
-Data Mining/Mid Term/Problem 3/TCGA-PANCAN-HiSeq-801x20531/labels.csv
-Data Mining/Mid Term/Problem 3/TCGA-PANCAN-HiSeq-801x20531/data.csv
+Data Mining/Data Sets/TCGA-PANCAN-HiSeq-801x20531/labels.csv
+Data Mining/Data Sets/TCGA-PANCAN-HiSeq-801x20531/data.csv
+Data Mining/Data Sets/wheat-seeds.csv
+Data Mining/Data Sets/iris.csv
