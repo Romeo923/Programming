@@ -58,7 +58,7 @@ def plot_iris(xdata, clusters):
 
 def main():
     #---------------Iris Dataset-------------
-    df = pd.read_csv("d:/pythonam3/data/iris.csv")
+    df = pd.read_csv("Data Mining\Data Sets\iris.csv")
     #---randomize data
     dfrandom = df #df.sample(frac=1, random_state=1119).reset_index(drop=True)
     # data read from a file is read as a string, so convert the first 4 cols to float
