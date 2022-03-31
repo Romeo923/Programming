@@ -9,8 +9,8 @@ import Utils
 
 def main():
     # Load the MNIST data
-    X, y = fetch_openml('mnist_784', version=1, return_X_y=True, as_frame=False)
-    #X, y = Utils.read_data() # cancer data
+    #X, y = fetch_openml('mnist_784', version=1, return_X_y=True, as_frame=False)
+    X, y = Utils.read_data() # cancer data
     # randomly select 800 samples from dataset
     np.random.seed(100)
     subsample_idc = np.random.choice(X.shape[0], 800, replace=False)
