@@ -1,0 +1,10 @@
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\bin\Debug\LDA.exe.config
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\bin\Debug\LDA.exe
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\bin\Debug\LDA.pdb
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.csproj.AssemblyReference.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.Form1.resources
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.Properties.Resources.resources
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.csproj.GenerateResource.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.csproj.CoreCompileInputs.cache
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.exe
+C:\Users\Romeo\Desktop\Coding\Programming\CV Programs\Assignment 9\LDA\LDA\obj\Debug\LDA.pdb
