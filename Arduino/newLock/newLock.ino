@@ -1,17 +1,3 @@
-
-/**
- * Created by K. Suwatchai (Mobizt)
- * 
- * Email: k_suwatchai@hotmail.com
- * 
- * Github: https://github.com/mobizt/Firebase-ESP-Client
- * 
- * Copyright (c) 2022 mobizt
- *
-*/
-
-//This example shows how to patch or update a document in a document collection. This operation required Email/password, custom or OAUth2.0 authentication.
-
 #if defined(ESP32)
 #include <WiFi.h>
 #elif defined(ESP8266)
@@ -34,8 +20,8 @@
 #define FIREBASE_PROJECT_ID "ore-locks"
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
-#define USER_EMAIL "cromeo5112@gmail.com"
-#define USER_PASSWORD "King1234"
+#define USER_EMAIL "ENTER EMAIL"
+#define USER_PASSWORD "ENTER PASSWORD"
 
 #define RELAY_PIN D1
 
@@ -78,7 +64,7 @@ void setup()
     auth.user.password = USER_PASSWORD;
 
     /* Assign the callback function for the long running token generation task */
-    config.token_status_callback = tokenStatusCallback; //see addons/TokenHelper.h
+    config.token_status_callback = tokenStatusCallback;
 
     Firebase.begin(&config, &auth);
     
@@ -92,14 +78,10 @@ void loop()
     {
         dataMillis = millis();
 
-        //For the usage of FirebaseJson, see examples/FirebaseJson/BasicUsage/Create.ino
         FirebaseJson content;
 
-        //aa is the collection id, bb is the document id.
         String documentPath = "locks/1";
 
-        //If the document path contains space e.g. "a b c/d e f"
-        //It should encode the space as %20 then the path will be "a%20b%20c/d%20e%20f"
         String mask = "lockRequest";
         int lock_request = 0;
         FirebaseJson p;
@@ -123,11 +105,7 @@ void loop()
           
           content.set("/fields/lockRequest/integerValue", 0);
           content.set("/fields/isOpen/booleanValue", false);
-
-          /** if updateMask contains the field name that exists in the remote document and 
-           * this field name does not exist in the document (content), that field will be delete from remote document
-          */
-  
+          
           if (Firebase.Firestore.patchDocument(&fbdo, FIREBASE_PROJECT_ID, "" /* databaseId can be (default) or empty */, documentPath.c_str(), content.raw(), "lockRequest,isOpen" /* updateMask */)){
               digitalWrite(RELAY_PIN, HIGH);
               Serial.println("Door Locked");
@@ -139,12 +117,8 @@ void loop()
 
           content.set("/fields/lockRequest/integerValue", 0);
           content.set("/fields/isOpen/booleanValue", true);
-          
-          /** if updateMask contains the field name that exists in the remote document and 
-           * this field name does not exist in the document (content), that field will be delete from remote document
-          */
-  
-          if (Firebase.Firestore.patchDocument(&fbdo, FIREBASE_PROJECT_ID, "" /* databaseId can be (default) or empty */, documentPath.c_str(), content.raw(), "lockRequest,isOpen" /* updateMask */)){
+
+          if (Firebase.Firestore.patchDocument(&fbdo, FIREBASE_PROJECT_ID, "", documentPath.c_str(), content.raw(), "lockRequest,isOpen")){
               digitalWrite(RELAY_PIN, LOW);
               Serial.println("Door Unlocked");      
 
@@ -153,10 +127,6 @@ void loop()
           
         }else{
           Serial.println("Awaiting Request...");
-        }
-        
-        
-
-        
+        }     
     }
 }
