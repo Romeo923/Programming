@@ -43,6 +43,6 @@ def main():
                 print(f'Epoch [{epoch+1}/{num_epochs}], Step[{i+1}/{num_total_steps}], Loss: {loss.item():.4f}')  
      
     # save trained AE model 
-    torch.save(model.state_dict(), '/Users/naseemdavis/Program/Data Mining/Assignment6/AutoEncoderCancerAnalysis/Models') 
+    torch.save(model.state_dict(), 'Data Mining\Assignment 6\AutoEncoderCancerAnalysis\Models') 
 if __name__ == "__main__": 
     sys.exit(int(main() or 0)) 

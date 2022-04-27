@@ -7,8 +7,8 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler 
  
 def get_train_test_loaders(batch_size): 
-    datafile = "/Users/naseemdavis/Desktop/TCGA-PANCAN-HiSeq-801x20531/data.csv" 
-    labels_file = "/Users/naseemdavis/Desktop/TCGA-PANCAN-HiSeq-801x20531/labels.csv" 
+    datafile = "Data Sets\TCGA-PANCAN-HiSeq-801x20531\data.csv" 
+    labels_file = "Data Sets\TCGA-PANCAN-HiSeq-801x20531\labels.csv" 
  
     data = np.genfromtxt( 
         datafile, 
